@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap');
+
+.container{
+    background-color: blue;
+}
+/*navbar*/
+.nav-item{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/*introduct*/
+.introduct h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+/*competensions*/
+
+/*support*/
+
+/*tarifs*/
+
+/*task-time*/
+
+/*team*/
+
+/*cases*/
+
+/*reviews*/
+
+/*collegues*/
+
+/*faq*/
+
+/*feedback*/
+
+/*footer*/
+
+/**/
