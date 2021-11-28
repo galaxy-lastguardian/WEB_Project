@@ -1,0 +1,186 @@
+
+/*presets*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+}
+
+
+    /*styles for mobile*/
+
+.wrapper-nav{
+    display: none;
+}
+
+
+/* introduct styles start */
+.wrapper-introduct{
+    background-image: url('../img/itroduct-bg.png');
+    padding-top: 15px;
+    padding-bottom: 80px;
+    color: white;
+    font-size: 14px;
+}
+.introduct h2{
+    font-size: 27px;
+}
+.introduct .item1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.introduct .item2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.introduct .item3{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.introduct button{
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.introduct button:hover{
+    background-color: orangered;
+}
+.introduct p{
+    opacity: 0.8;
+}
+.introduct h3{
+    font-size: 27px;
+}
+.introduct span{
+    font-size: 55px;
+}
+.introduct .item{
+    border-left: 3px solid orangered;
+    margin-bottom: 25px;
+}
+.introduct .block{
+    margin-left: 7px;
+}
+
+/* introduct styles end */
+
+
+/* competensions styles start */
+
+.competensions{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.competensions h2{
+    font-size: 27px;
+}
+.competensions > p{
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+.competensions p{
+    opacity: 0.7;
+}
+.competensions .row {
+    font-size: 16px;
+}
+
+/* competensions styles end */
+
+
+/* support styles start */
+
+.wrapper-support{
+    background-color: greenyellow;
+    font-size: 18px;
+}
+.support h2{
+    font-size: 27px;
+}
+.support h3{
+    font-size: 20px;
+}
+.support p{
+    opacity: 0.8;
+}
+.support .item{
+    border-left: 3px solid orangered;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+.support .block{
+    margin-left: 0px;
+}
+.support span{
+    color: orangered;
+}
+.support .elem{
+    background-color: white;
+}
+.support .ekspertiza{
+    color: white;
+}
+
+/* support styles end */
+
+
+/* tarifs styles start */
+
+/* tarifs styles end */
+
+
+/* task-time styles start */
+
+/* task-time styles end */
+
+
+/* team styles start */
+
+/* team styles end */
+
+
+    /*styles for desktop*/
+
+@media screen and (min-width: 767px) {
+    
+    /* introduct styles start */
+    
+    /* introduct styles end */
+
+
+    /* competensions styles start */
+
+    /* competensions styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+}
