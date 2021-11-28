@@ -1,47 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap');
 
-.container{
-    background-color: blue;
+/*presets*/
+html{
+    box-sizing: border-box;
 }
-/*navbar*/
-.nav-item{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+*, *::before, *::after{
+    box-sizing: inherit;
 }
-/*introduct*/
+*{
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+}
+
+
+    /*styles for mobile*/
+
+.wrapper-nav{
+    display: none;
+}
+
+
+/* introduct styles start */
+.wrapper-introduct{
+    background-image: url('../img/itroduct-bg.png');
+    padding-top: 15px;
+    padding-bottom: 80px;
+    color: white;
+    font-size: 14px;
+}
 .introduct h2{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 60px;
-    color: #FFFFFF;
+    font-size: 27px;
 }
-/*competensions*/
+.introduct .item1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.introduct .item2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.introduct .item3{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.introduct button{
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.introduct button:hover{
+    background-color: orangered;
+}
+.introduct p{
+    opacity: 0.8;
+}
+.introduct h3{
+    font-size: 27px;
+}
+.introduct span{
+    font-size: 55px;
+}
+.introduct .item{
+    border-left: 3px solid orangered;
+    margin-bottom: 25px;
+}
+.introduct .block{
+    margin-left: 7px;
+}
 
-/*support*/
+/* introduct styles end */
 
-/*tarifs*/
 
-/*task-time*/
+/* competensions styles start */
 
-/*team*/
+.competensions{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.competensions h2{
+    font-size: 27px;
+}
+.competensions > p{
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 18px;
+}
+.competensions p{
+    opacity: 0.7;
+}
+.competensions .row {
+    font-size: 16px;
+}
 
-/*cases*/
+/* competensions styles end */
 
-/*reviews*/
 
-/*collegues*/
+/* support styles start */
 
-/*faq*/
+.wrapper-support{
+    background-color: greenyellow;
+    font-size: 18px;
+}
+.support h2{
+    font-size: 27px;
+}
+.support h3{
+    font-size: 20px;
+}
+.support p{
+    opacity: 0.8;
+}
+.support .item{
+    border-left: 3px solid orangered;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+.support .block{
+    margin-left: 0px;
+}
+.support span{
+    color: orangered;
+}
+.support .elem{
+    background-color: white;
+}
+.support .ekspertiza{
+    color: white;
+}
 
-/*feedback*/
+/* support styles end */
 
-/*footer*/
 
-/**/
+/* tarifs styles start */
+
+/* tarifs styles end */
+
+
+/* task-time styles start */
+
+/* task-time styles end */
+
+
+/* team styles start */
+
+/* team styles end */
+
+
+    /*styles for desktop*/
+
+@media screen and (min-width: 767px) {
+    
+    /* introduct styles start */
+    
+    /* introduct styles end */
+
+
+    /* competensions styles start */
+
+    /* competensions styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+}
