@@ -64,6 +64,7 @@ html{
 }
 .introduct span{
     font-size: 55px;
+    font-weight: bold;
 }
 .introduct .item{
     border-left: 3px solid orangered;
@@ -71,6 +72,21 @@ html{
 }
 .introduct .block{
     margin-left: 7px;
+}
+.introduct .cup-block{
+    position: relative;
+}
+.introduct .img-cup{
+    position: absolute;
+    top: -30px;
+    left: 60px;
+}
+.introduct .img-cup-header{
+    position: absolute;
+    top: -37px;
+}
+.introduct .h3-to-hide{
+    opacity: 0;
 }
 
 /* introduct styles end */
