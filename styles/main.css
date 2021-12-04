@@ -1,60 +1,9 @@
 
-/* montserrat-regular - latin */
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/montserrat-v18-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/montserrat-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/montserrat-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
-  }
-  /* montserrat-600 - latin */
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/montserrat-v18-latin-600.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/montserrat-v18-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/montserrat-v18-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/montserrat-v18-latin-600.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/montserrat-v18-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/montserrat-v18-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
-  }
-  /* ubuntu-regular - latin */
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ubuntu-v15-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/ubuntu-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/ubuntu-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/ubuntu-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/ubuntu-v15-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
-  }
-  /* ubuntu-500 - latin */
-  @font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/ubuntu-v15-latin-500.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/ubuntu-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/ubuntu-v15-latin-500.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/ubuntu-v15-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/ubuntu-v15-latin-500.svg#Ubuntu') format('svg'); /* Legacy iOS */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 body{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /*presets*/
@@ -105,7 +54,7 @@ html{
 }
 .introduct .item3{
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .introduct button{
     width: 220px;
@@ -164,6 +113,7 @@ html{
 .competensions{
     padding-top: 80px;
     padding-bottom: 70px;
+    line-height: 23px;
 }
 .competensions h2{
     font-size: 27px;
@@ -180,6 +130,10 @@ html{
 .competensions .row {
     font-size: 16px;
 }
+.competensions .competension{
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 /* competensions styles end */
 
@@ -187,16 +141,23 @@ html{
 /* support styles start */
 
 .wrapper-support{
-    background-color: greenyellow;
+    background-image: url(../img/support-bg-mobile.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     font-size: 18px;
+    line-height: 23px;
+    position: relative;
 }
 .support h2{
     font-size: 27px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .support h3{
     font-size: 20px;
     font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .support p{
     opacity: 0.8;
@@ -206,7 +167,7 @@ html{
     margin-bottom: 25px;
     max-width: 300px;
 }
-.support .block{
+.support .block2{
     margin-left: 0px;
 }
 .support span{
@@ -214,6 +175,15 @@ html{
 }
 .support .elem{
     background-color: white;
+    margin-bottom: 5px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0 0 20px rgba(233, 227, 227, 0.5);
+    position: relative;
+}
+.support .block1{
+    padding: 15px;
 }
 .support .ekspertiza{
     color: white;
@@ -223,35 +193,63 @@ html{
     font-weight: bold;
     opacity: 0.5;
 }
+.support .support-pic{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.support .z-index{
+    position: relative;
+}
 .ekspertiza h2{
     margin-bottom: 20px;
 }
 .ekspertiza .item{
     padding-left: 15px;
 }
+.support .laptop{
+    width: 320px;
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+}
+.support .empty-space{
+    height: 320px;
+    opacity: 0;
+}
+
 
 /* support styles end */
 
 
 /* tarifs styles start */
 
-
+.tarifs{
+    padding-top: 95px;
+}
 .tarifs .orange{
     color: orangered;
     font-size: 22px;
     font-weight: bold;
 }
+.tarifs ul{
+    padding: 0;
+    margin-left: 20px;
+}
 .tarifs li{
     list-style-image: url(../img/tarifs-galka.png);
+    margin-bottom: 10px;
 }
 .tarifs button{
+    font-size: 13px;
     width: 100%;
-    height: 60px;
+    height: 55px;
     border-radius: 5px;
-    border: 2px solid orangered;
+    border: 1.5px solid orangered;
     outline: none;
     background-color: transparent;
     color: orangered;
+    margin-top: 30px;
 }
 .tarifs button:hover{
     background-color: orangered;
@@ -259,18 +257,27 @@ html{
 }
 .tarifs p{
     opacity: 0.5;
-    margin-top: 30px;
-    margin-bottom: 25px;
 }
 .tarifs a{
     color: black;
+    font-size: 13px;
 }
 .tarifs hr{
     border: 1px solid black;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 .tarifs .row > h2{
     font-weight: bold;
+}
+.tarifs .row{
+    padding: 15px;
+}
+.tarif1, .tarif2, .tarif3{
+    border: 1px solid rgb(201, 190, 190);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 30px 15px;
 }
 
 
@@ -298,7 +305,6 @@ html{
     
     .wrapper-nav{
         display: block;
-        font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -349,9 +355,13 @@ html{
 
     .competensions{
         padding-top: 140px;
+        padding-bottom: 140px;
     }
     .competensions h2{
         font-size: 42px;
+    }
+    .competensions .competension{
+        text-align: justify;
     }
 
     /* competensions styles end */
@@ -359,13 +369,43 @@ html{
 
     /* support styles start */
 
+    .wrapper-support{
+        background-image: url(../img/support-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
     .support h2{
         font-size: 42px;
+        margin-bottom: 50px;
+    }
+    .support .elem{
+        max-width: 315px;
+        margin-right: 5px;
+    }
+    .support .laptop{
+        width: 500px;
+        left: 0px;
+        bottom: -80px;
+    }
+    .support .empty-space{
+        height: 210px;
+    }
+    .support .block2{
+        margin-bottom: 150px;
     }
 
     /* support styles end */
 
 
+    /* tarifs styles start */
+
+    .tarifs{
+        padding-top: 100px;
+    }
+
+    /* tarifs styles end */
+
+
     /*  styles start */
 
     /*  styles end */
@@ -374,9 +414,25 @@ html{
     /*  styles start */
 
     /*  styles end */
+}
+@media screen and (min-width: 1240px) {
+    /* support styles start */
 
+    .support .laptop{
+        width: 730px;
+        left: 0px;
+        bottom: -115px;
+    }
+    .support .empty-space{
+        height: 220px;
+    }
+    .support .block2{
+        margin-bottom: 150px;
+    }
 
-    /*  styles start */
+    /* support styles end */
 
-    /*  styles end */
+    .tarifs{
+        padding-top: 150px;
+    }
 }
