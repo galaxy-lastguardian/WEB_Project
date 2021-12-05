@@ -3,6 +3,11 @@
     <head>
         <meta charset = UTF-8>
         <meta name = "viewport" content="width=device-width, initial scale = 1">
+        <!-- Подключение шрифтов -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+        <!--  -->
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     </head>
@@ -10,69 +15,92 @@
         <div class="wrapper-nav-introduct">
             <div class="wrapper-nav">
                 <div class="container">
-                    <nav class="navbar navbar-expand">
-                        <div class="navbar-brand"></div>
-                        <div class="navbar-collapse">
-                            <ul class="menu nav navbar-nav">
-                                    <li class = "nav-item">поддержка drupal</li>
-                                    <li class = "nav-item dropdown">администрирование</li>
-                                    <li class = "nav-item">продвижение</li>
-                                    <li class = "nav-item">реклама</li>
-                                    <li class = "nav-item dropdown">о нас</li>
-                                    <li class = "nav-item">проекты</li>
-                                    <li class = "nav-item">контакты</li>
-                            </ul>
+                    <div class="navbar">
+                        <div class="navbar-logo">
+                            <a href="" class="nav-logo-link">
+                                <img src="./img/nav-logo.png" alt="logo" class="nav-logo-pic">
+                            </a>
                         </div>
-                    </nav>
+                        <nav>
+                            <ul class="nav-list">
+                                <li class = "nav-item">
+                                    <a href="#!" class="nav-link">поддержка drupal</a>
+                                </li>
+                                <li class = "nav-item dropdown">
+                                    <a href="#!" class="nav-link">администрирование <span>▼</span></a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href="#!" class="nav-link">продвижение</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href="#!" class="nav-link">реклама</a>
+                                <li class = "nav-item dropdown">
+                                    <a href="#!" class="nav-link">о наc <span>▼</span></a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href="#!" class="nav-link">проекты</a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a href="#!" class="nav-link">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
             <div class="wrapper-introduct">
                 <div class="container">
                     <div class="introduct">
-                        <div class="row">
+                        <div class="row my-5">
                             <div class="col-12 col-lg-6">
                                 <div class="row text-center text-md-start item1">
-                                    <h2>Поддержка сайтов на Drupal</h2>
+                                    <h2>Поддержка <br> сайтов на Drupal</h2>
                                 </div>
                                 <div class="row text-center text-md-start item2">
                                     <p>
-                                        Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности
+                                        Сопровождение и поддержка сайтов <br> на CMS Drupal любых версий и запущенности
                                     </p>
                                 </div>
                                 <div class="row text-center text-md-start item3">
                                     <div class="tarifs-but">
-                                        <button>
+                                        <button onClick='location.href="#tarifs"'>
                                             ТАРИФЫ
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6">
-                                <div class="row block">
+                            <div class="col-12 col-lg-6 mt-5">
+                                <div class="row block gy-5">
                                     <div class="col-6 col-md-4 item">
-                                        <span>#1</span>
-                                        <img src="img/cup.png" alt="cup" class="img-cup">
-                                        <p>Drupal-разработчик в России по версии Рейтинга Рунета</p>
+                                        <div class = "cup-block">
+                                            <span class = "img-cup-header">#1</span>
+                                            <img src="img/cup.png" alt="cup" class="img-cup">
+                                        </div>
+                                        <h3 class = "h3-to-hide">  
+                                            <!-- этот заголовок необходим чтобы сохранить форматирование как в след. примерах, но спрятать, т.к. основной блок - предыдущий -->
+                                            ...
+                                        </h3>
+                                        <p>Drupal-разработчик <br> в России по версии <br> Рейтинга Рунета</p>
                                     </div>
                                     <div class="col-6 col-md-4 item">
                                         <h3>3+</h3>
-                                        <p>средний опыт специалистов более 3 лет</p>
+                                        <p>средний опыт <br> специалистов более <br> 3 лет</p>
                                     </div>
                                     <div class="col-6 col-md-4 item">
                                         <h3>14</h3>
-                                        <p>лет опыта в сфере Drupal</p>
+                                        <p>лет опыта в сфере <br> Drupal</p>
                                     </div>
                                     <div class="col-6 col-md-4 item">
                                         <h3>50+</h3>
-                                        <p>модулей и тем в формате DrupalGive</p>
+                                        <p>модулей и тем <br> в формате DrupalGive</p>
                                     </div>
                                     <div class="col-6 col-md-4 item">
                                         <h3>90 000+</h3>
-                                        <p>часов поддержки сайтов на Drupal</p>    
+                                        <p>часов поддержки <br> сайтов на Drupal</p>    
                                     </div>
                                     <div class="col-6 col-md-4 item">
                                         <h3>300+</h3>
-                                        <p>Проектов на поддержке</p>    
+                                        <p>Проектов <br> на поддержке</p>    
                                     </div>    
                                 </div>
                             </div>
@@ -84,47 +112,71 @@
         <div class="wrapper-main">
             <div class="container">
                 <div class="competensions">
-                    <h2>13 лет совершенствуем компетенции в Друпал поддержке!</h2>
-                    <p>Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн</p>
+                    <h2>13 лет совершенствуем <br> компетенции в Друпал <br> поддержке!</h2>
+                    <p>Разрабатываем и оптимизируем модули, расширяем <br> функциональность сайтов, обновляем дизайн</p>
                     <div class="row">
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-1.svg" alt="competension">
+                            </div>
                             <p>
-                                Добавление информации на сайт, создание новых разделов
+                                Добавление <br> информации на сайт, <br> создание новых <br> разделов
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-2.svg" alt="competension">
+                            </div>
                             <p>
-                                Разработка и оптимизация модулей сайта
+                                Разработка <br> и оптимизация <br> модулей сайта
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-3.svg" alt="competension">
+                            </div>
                             <p>
-                                Интеграция с CRM, 1C, платежными системами, любыми веб-сервисами
+                                Интеграция с CRM, <br> 1C, платежными <br> системами, любыми <br> веб-сервисами
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-4.svg" alt="competension">
+                            </div>
                             <p>
-                                Любые доработки функционала и дизайна
+                                Любые доработки <br> функционала <br> и дизайна
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-5.svg" alt="competension">
+                            </div>
                             <p>
-                                Аудит и мониторинг безопасности Drupal сайтов
+                                Аудит и мониторинг <br> безопасности Drupal <br> сайтов
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-6.svg" alt="competension">
+                            </div>
                             <p>
-                                Миграция, импорт контента и апрегйд Drupal
+                                Миграция, импорт <br> контента и апрегйд <br> Drupal
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-7.svg" alt="competension">
+                            </div>
                             <p>
-                                Оптимизация и ускорение Drupal-сайтов 
+                                Оптимизация <br> и ускорение <br> Drupal-сайтов 
                             </p>
                         </div>
                         <div class="col-6 col-lg-3">
+                            <div class="competension">
+                                <img src="img/competency-8.svg" alt="competension">
+                            </div>
                             <p>
-                                Веб-маркетинг, консультации и работы по SEO
+                                Веб-маркетинг, <br> консультации <br> и работы по SEO
                             </p>
                         </div>
                     </div>
@@ -135,78 +187,119 @@
             <div class="container">
                 <div class="support">
                     <div class="row text-center">
-                        <h2>Поддержка от Drupal-coder</h2>
+                        <h2>Поддержка <br> от Drupal-coder</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>01.</p>
-                            <h3>Постановка задачи по Email</h3>
-                            <p>Удобная и привычная модель постановки задачи, при которой задачи фиксируются и никогда не теряются.</p>
+                    <div class="row block1">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="elem">
+                                <p class="digit">01.</p>
+                                <h3>Постановка задачи по Email</h3>
+                                <p>Удобная и привычная модель постановки задачи, при которой задачи фиксируются и никогда не теряются.</p>
+                                <div class="support-pic">
+                                    <img src="img/support1.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>02.</p>
-                            <h3>Система Helpdesk - отчетность, прозрачность</h3>
-                            <p>Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">02.</p>
+                                <h3>Система Helpdesk - отчетность, прозрачность</h3>
+                                <p>Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</p>
+                                <div class="support-pic">
+                                    <img src="img/support2.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>03.</p>
-                            <h3>Расширенная техническая поддержка</h3>
-                            <p>Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">03.</p>
+                                <h3>Расширенная техническая поддержка</h3>
+                                <p>Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных</p>
+                                <div class="support-pic">
+                                    <img src="img/support3.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>04.</p>
-                            <h3>Персональный менеджер проекта</h3>
-                            <p>Ваш менеджер всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">04.</p>
+                                <h3>Персональный менеджер проекта</h3>
+                                <p>Ваш менеджер всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
+                                <div class="support-pic">
+                                    <img src="img/support4.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>05.</p>
-                            <h3>Удобные способы оплаты</h3>
-                            <p>Безналичный расчет по договору или электронные деньги: Webmoney, Яндекс.Деньги, Paypal.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">05.</p>
+                                <h3>Удобные способы оплаты</h3>
+                                <p>Безналичный расчет по договору или электронные деньги: Webmoney, Яндекс.Деньги, Paypal.</p>
+                                <div class="support-pic">
+                                    <img src="img/support5.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>06.</p>
-                            <h3>Работаем с SLA и NDA</h3>
-                            <p>Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">06.</p>
+                                <h3>Работаем с SLA и NDA</h3>
+                                <p>Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</p>
+                                <div class="support-pic">
+                                    <img src="img/support6.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>07.</p>
-                            <h3>Штатные специалисты</h3>
-                            <p>Надежные штатные специалисты, никаких фрилансеров.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">07.</p>
+                                <h3>Штатные специалисты</h3>
+                                <p>Надежные штатные специалисты, никаких фрилансеров.</p>
+                                <div class="support-pic">
+                                    <img src="img/support7.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 elem">
-                            <p>08.</p>
-                            <h3>Удобные каналы связи</h3>
-                            <p>Консультации по телефону, скайпу, в мессенджерах.</p>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class = "elem">
+                                <p class="digit">08.</p>
+                                <h3>Удобные каналы связи</h3>
+                                <p>Консультации по телефону, скайпу, в мессенджерах.</p>
+                                <div class="support-pic">
+                                    <img src="img/support8.svg" alt="pic">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row ekspertiza">
                         <div class="col-12 col-lg-6  order-lg-1">
-                            <h2>Экспертиза в Drupal, опыт 14 лет!</h2>
-                            <div class="row block">
+                            <h2>Экспертиза в Drupal, <br> опыт 14 лет!</h2>
+                            <div class="row block2">
                                 <div class="col-12 col-md-6 item">
                                     <p>
-                                        Только системный подход - контроль версий, резервирование и тестирование!
+                                        Только системный подход - <br> контроль версий, <br> резервирование и <br> тестирование!
                                     </p>    
                                 </div>
                                 <div class="col-12 col-md-6 item">
                                     <p>
-                                        Только Drupal сайты, не берем поддержку сайтов на других CMS!
+                                        Только Drupal сайты, не <br> берем поддержку сайтов <br> на других CMS!
                                     </p>    
                                 </div>
                                 <div class="col-12 col-md-6 item">
                                     <p>
-                                        Учавствуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем <span>свои модули Drupal</span>
+                                        Учавствуем в разработке <br> ядра Drupal и модулей на <br> Drupal.org, разрабатываем <br> <span>свои модули Drupal</span>
                                     </p>    
                                 </div>
                                 <div class="col-12 col-md-6 item">
                                     <p>
-                                        Поддерживаем сайты на Drupal 5,6,7 и 8
+                                        Поддерживаем сайты на <br> Drupal 5,6,7 и 8
                                     </p>    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            ***ИЗОБРАЖЕНИЕ***
+                        <div class="empty-space">...</div>
+                        <div class="col-12 col-lg-6 laptop-div">
+                            <img src="img/laptop.png" alt="laptop" class="laptop">
                         </div>
                     </div>
                 </div>
@@ -214,59 +307,68 @@
         </div>
         <div class="wrapper-tarifs">
             <div class="container">
-                <div class="tarifs">
+                <div class="tarifs" id="tarifs">
                     <div class="row text-center">
                         <h2>Тарифы</h2>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <h2></h2>
-                            <ul>
-                                <li>Консультации и работы по SEO</li>
-                                <li>Услуги дизайнера</li>
-                                <li>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
-                                <li>Предоплата от 6000 рублей в месяц</li>
-                            </ul>
-                            <div class="col-12 text-center">
-                                <button class="contact-button">
-                                    Свяжитесь с нами!
-                                </button>     
+                        <div class="col-12 col-lg-4 t1">
+                            <div class = "tarif1">
+                                <h2 class="orange">Стартовый</h2>
+                                <hr><br>
+                                <ul>
+                                    <li>Консультации и работы по SEO</li>
+                                    <li>Услуги дизайнера</li>
+                                    <li>Неиспользованные оплаченные часы переносятся на следующий месяц</li>
+                                    <li>Предоплата от 6000 рублей в месяц</li>
+                                </ul>
+                                <div class="col-12 text-center">
+                                    <button class="contact-button" onClick='location.href="#form"'>
+                                        СВЯЖИТЕСЬ С НАМИ!
+                                    </button>     
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <h2></h2>
-                            <ul>
-                                <li>Консультации и работы по SEO</li>
-                                <li>Услуги дизайнера</li>
-                                <li>Высокое время реакции - до 2 рабочих дней</li>
-                                <li>Неиспользованные оплаченные часы не переносятся</li>
-                                <li>Предоплата от 30000 рублей в месяц</li>
-                            </ul>
-                            <div class="col-12 text-center">
-                                <button class="contact-button">
-                                    Свяжитесь с нами!
-                                </button>     
+                            <div class = "tarif2">
+                                <h2 class="orange">Бизнес</h2>
+                                <hr><br>
+                                <ul>
+                                    <li>Консультации и работы по SEO</li>
+                                    <li>Услуги дизайнера</li>
+                                    <li>Высокое время реакции - до 2 рабочих дней</li>
+                                    <li>Неиспользованные оплаченные часы не переносятся</li>
+                                    <li>Предоплата от 30000 рублей в месяц</li>
+                                </ul>
+                                <div class="col-12 text-center">
+                                    <button class="contact-button" onClick='location.href="#form"'>
+                                        СВЯЖИТЕСЬ С НАМИ!
+                                    </button>     
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <h2></h2>
-                            <ul>
-                                <li>Консультации и работы по SEO</li>
-                                <li>Услуги дизайнера</li>
-                                <li>Максимальное время реакции - в день обращения</li>
-                                <li>Неиспользованные оплаченные часы не переносятся</li>
-                                <li>Предоплата от 270000 в месяц</li>
-                            </ul>
-                            <div class="col-12 text-center">
-                                <button class="contact-button">
-                                    Свяжитесь с нами!
-                                </button>     
+                            <div class = "tarif3">
+                                <h2 class="orange">VIP</h2>
+                                <hr><br>
+                                <ul>
+                                    <li>Консультации и работы по SEO</li>
+                                    <li>Услуги дизайнера</li>
+                                    <li>Максимальное время реакции - в день обращения</li>
+                                    <li>Неиспользованные оплаченные часы не переносятся</li>
+                                    <li>Предоплата от 270000 в месяц</li>
+                                </ul>
+                                <div class="col-12 text-center">
+                                    <button class="contact-button" onClick='location.href="#form"'>
+                                        СВЯЖИТЕСЬ С НАМИ!
+                                    </button>     
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row text-center">
-                        <p>Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!</p>
-                        <a>получить индивидуальный тариф</a>
+                    <div class="text-center">
+                        <p>Вам не подходят наши тарифы? Оставьте заявку и мы <br> предложим вам индивидуальные условия!</p>
+                        <a href="#!">ПОЛУЧИТЬ ИНДИВИДУАЛЬНЫЙ ТАРИФ</a>
                     </div>
                 </div>
             </div>
@@ -548,7 +650,7 @@
         </div>
         <div class="wrapper-form">
             <div class="container">
-                    <div class="feedback">
+                    <div class="feedback" id="form">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="row">
@@ -569,33 +671,33 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <form action="">
+                            <form class="form" action="https://formcarry.com/s/46WaOUCdYYl" method="POST" accept-charset="UTF-8" id="form">
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="text" name = "form-name" placeholder="Ваше имя">
-                                        <label for="form-name"></label>
+                                        <input type="text" name = "name" id="form-name" class="form_input _req" required>
+                                        <label for="form-name" class="form_label">Ваше имя</label>
                                     </div>
                                     <div class="col-12">
-                                        <input type="number" name = "form-phone" placeholder="Телефон">
-                                        <label for="form-phone"></label>
+                                        <input type="number" name = "phone" id="form-phone" class="form_input _req _number" required>
+                                        <label for="form-phone" class="form_label">Телефон</label>
                                     </div>
                                     <div class="col-12">
-                                        <input type="email" name = "form-email" placeholder="E-mail">
-                                        <label for="form-email"></label>
+                                        <input type="email" name = "email" id="form-email" class="form_input _req _email" required>
+                                        <label for="form-email" class="form_label">E-mail</label>
                                     </div>
                                     <div class="col-12">
-                                        <textarea name="form-comment" placeholder="Ваш комментарий"></textarea>
-                                        <label for="form-comment"></label>
+                                        <textarea name="comment" id="form-comment" class="form_input" required></textarea>
+                                        <label for="form-comment" class="form_label">Ваш комментарий</label>
                                     </div>
                                     <div class="col-12">
-                                        <input type="checkbox" name = "form-checkbox">
-                                        <label for="form-checkbox">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                                        <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input _req" required>
+                                        <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
                                     </div>
                                     <div class="col-12">
                                         <div class="g-recaptcha" data-sitekey="0000000000000000000000">Капча</div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit">свяжитесь с нами</button>
+                                        <button type="submit" class="form_button">свяжитесь с нами</button>
                                     </div>
                                 </div>
                             </form>
