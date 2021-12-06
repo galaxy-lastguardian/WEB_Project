@@ -4,6 +4,8 @@
         <meta charset = UTF-8>
         <meta name = "viewport" content="width=device-width, initial scale = 1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -483,33 +485,30 @@
                         <a href="">info@drupal-coder.ru</a>
                     </div>
                 </div>
-                <form class="form" action="https://formcarry.com/s/46WaOUCdYYl" method="POST" accept-charset="UTF-8" id="form">
+                <form class="ajaxForm" action="https://formcarry.com/s/46WaOUCdYYl" accept-charset="UTF-8" method="post" id="form">
                     <div class="row">
                         <div class="col-12">
-                            <input type="text" name = "name" id="form-name" class="form_input _req" required>
+                            <input type="text" name = "name" id="form-name" required>
                             <label for="form-name" class="form_label">Ваше имя</label>
                         </div>
                         <div class="col-12">
-                            <input type="number" name = "phone" id="form-phone" class="form_input _req _number" required>
+                            <input type="number" name = "phone" id="form-phone" required>
                             <label for="form-phone" class="form_label">Телефон</label>
                         </div>
                         <div class="col-12">
-                            <input type="email" name = "email" id="form-email" class="form_input _req _email" required>
+                            <input type="email" name = "email" id="form-email" required>
                             <label for="form-email" class="form_label">E-mail</label>
                         </div>
                         <div class="col-12">
-                            <textarea name="comment" id="form-comment" class="form_input" required></textarea>
-                            <label for="form-comment" class="form_label">Ваш комментарий</label>
+                            <textarea name="comment" id="form-comment" required></textarea>
+                            <label for="form-comment" >Ваш комментарий</label>
                         </div>
                         <div class="col-12">
-                            <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input _req" required>
-                            <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                            <input type="checkbox" name = "checkbox" id="form-checkbox" required>
+                            <label for="form-checkbox" >Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
                         </div>
                         <div class="col-12">
-                            <div class="g-recaptcha" data-sitekey="0000000000000000000000">Капча</div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="form_button">свяжитесь с нами</button>
+                            <button type="submit" >свяжитесь с нами</button>
                         </div>
                     </div>
                 </form>
