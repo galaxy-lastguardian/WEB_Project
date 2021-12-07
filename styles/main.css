@@ -23,16 +23,41 @@ html{
 
 /* nav-introduct styles start */
 
+/* navigation */
 .wrapper-nav-introduct{
     background-image: url('../img/itroduct-bg.png');
     padding-bottom: 35px;
     padding-top: 1px;
 }
-
 .wrapper-nav{
     display: none;
 }
+/*изменение стилей поверх бутстрапа*/
+@media all and (min-width: 768px) {
+	.navbar .nav-item .dropdown-menu{
+        display: none;
+        margin-top:0;
+        border-radius: 0;
+        background-color: #f04d35; 
+    }
+	.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+        background-color: #d13018;
+    }
+	.navbar .nav-item:hover .dropdown-menu{
+        display: block; 
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item{
+        padding: 0;
+        color:white;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item .nav-link{
+        padding:3px 20px;
+    }
+}	
 
+/* introductory */
 .wrapper-introduct{
     color: white;
     font-size: 14px;
@@ -139,7 +164,6 @@ html{
     text-align: center;
     margin-bottom: 15px;
     max-width: 200px;
-
     background-image: url(../img/competensions-icon-bg.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -173,6 +197,8 @@ html{
 .support p{
     opacity: 0.9;
     font-size: 16px;
+    position: relative;
+    z-index: 1;
 }
 .support .item{
     border-left: 3px solid orangered;
@@ -194,13 +220,9 @@ html{
     padding: 25px;
     box-shadow: 0 0 20px rgba(233, 227, 227, 0.5);
     position: relative;
-    z-index: 1;
 }
 .support .block1{
     padding: 15px;
-}
-.support .ekspertiza{
-    color: white;
 }
 .support .digit{
     font-size: 12px;
@@ -213,7 +235,9 @@ html{
     bottom: 0px;
     z-index: 0;
 }
-
+.support .ekspertiza{
+    color: white;
+}
 .ekspertiza h2{
     margin-bottom: 20px;
 }
@@ -230,7 +254,6 @@ html{
     height: 320px;
     opacity: 0;
 }
-
 
 /* support styles end */
 
@@ -299,7 +322,7 @@ html{
     padding: 15px;
 }
 .tarif1, .tarif2, .tarif3{
-    background-color: white;
+    background-color: rgb(246, 246, 246);
     border: 1px solid rgb(201, 190, 190);
     border-radius: 5px;
     margin-bottom: 30px;
@@ -307,15 +330,17 @@ html{
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
-.tarif1:hover, .tarif2:hover, .tarif3:hover{
-    transform: scale(1.1);
-}
 :is(.tarif1:hover, .tarif2:hover, .tarif3:hover) button{
     background-color: orangered;
-    color: white;
+    color:white;
 }
-.tarif1:hover  .tarif2, .tarif3:hover .tarif2{
-    transform: scale(1);
+:is(.tarif1:hover, .tarif2:hover, .tarif3:hover){
+    background-color: white;
+}
+@media (min-width:768px) {
+    .tarif1:hover, .tarif2:hover, .tarif3:hover{
+        transform: scale(1.1);
+    }   
 }
 
 /* tarifs styles end */
