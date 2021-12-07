@@ -362,6 +362,45 @@ html{
 
 /* team styles start */
 
+.team{
+    padding: 45px 16px;
+}
+.team h2{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.team h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.team p{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.team .pic{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.team row{
+    width: 100%;
+}
+.team .item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.team button{
+    font-size: 12px;
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 190, 190);
+    outline: none;
+    background-color: white;
+    font-weight: 500;
+}
+
 /* team styles end */
 
 
@@ -510,6 +549,25 @@ html{
 
 
     /* team styles start */
+    .team{
+        padding-top: 150px;
+    }
+    .team h2{
+        font-size: 42px;
+    }
+    .team p{
+        font-size: 16px;
+    }
+    .team .item{
+        padding-left: 75px;
+        padding-right: 75px;
+        margin-top: 65px;
+    }
+    .team button{
+        width: 250px;
+        height: 60px;
+        margin-top: 40px;
+    }
 
     /* team styles end */
 
