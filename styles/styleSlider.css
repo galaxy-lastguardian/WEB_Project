@@ -25,7 +25,12 @@
     outline: 0;
 }
 
-.collegues-slider-main .slide {
-    margin: 20px;
+.collegues-slider-main .slide, .collegues-slider-attach .slide {
+    margin: 10px;
     padding: -100px;
+}
+
+.collegues-slider-main img, .collegues-slider-attach img {
+    width: 251px;
+    height: 125px;
 }

@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+/*presets*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    font-family:'Montserrat';
+    font-size:inherit;
+    font-style:inherit;
+}
+
+
+    /*styles for mobile*/
+
+
+/* nav-introduct styles start */
+
+/* navigation */
+.wrapper-nav-introduct{
+    background-image: url('../img/itroduct-bg.png');
+    padding-bottom: 35px;
+    padding-top: 1px;
+}
+.wrapper-nav{
+    display: none;
+}
+/*изменение стилей поверх бутстрапа*/
+@media all and (min-width: 768px) {
+	.navbar .nav-item .dropdown-menu{
+        display: none;
+        margin-top:0;
+        border-radius: 0;
+        background-color: #f04d35; 
+    }
+	.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+        background-color: #d13018;
+    }
+	.navbar .nav-item:hover .dropdown-menu{
+        display: block; 
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item{
+        padding: 0;
+        color:white;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item .nav-link{
+        padding:3px 20px;
+    }
+}	
+
+/* introductory */
+.wrapper-introduct{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.introduct h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.introduct .item1{
+    margin-bottom: 20px;
+}
+.introduct .item2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.introduct .item3{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.introduct button{
+    font-size: 12px;
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.introduct button:hover{
+    background-color: orangered;
+}
+.introduct p{
+    opacity: 0.8;
+}
+.introduct h3{
+    font-size: 23px;
+    font-weight: bold;
+}
+.introduct span{
+    font-size: 45px;
+    font-weight: bold;
+}
+.introduct .item{
+    border-left: 3px solid orangered;
+    margin-top: 25px;
+}
+.introduct .block{
+    margin-left: 7px;
+}
+.introduct .cup-block{
+    position: relative;
+}
+.introduct .img-cup{
+    position: absolute;
+    top: -30px;
+    left: 60px;
+}
+.introduct .img-cup-header{
+    position: absolute;
+    top: -37px;
+}
+.introduct .h3-to-hide{
+    opacity: 0;
+}
+.introduct .block p{
+    line-height: 15px;
+}
+.introduct .item > p{
+    font-size: 13px;
+}
+
+/* nav-introduct styles end */
+
+
+/* competensions styles start */
+
+.competensions{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    line-height: 23px;
+    font-weight: 500px;
+}
+.competensions h2{
+    font-size: 23px;
+    font-weight: bold;
+}
+.competensions p{
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 14px;
+}
+.competensions > p{
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+.competensions .row {
+    font-size: 16px;
+}
+.competensions .competension{
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 200px;
+    background-image: url(../img/competensions-icon-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* competensions styles end */
+
+
+/* support styles start */
+
+.wrapper-support{
+    background-image: url(../img/support-bg-mobile.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 18px;
+    line-height: 23px;
+    position: relative;
+    font-weight: 500;
+}
+.support h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.support h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.support p{
+    opacity: 0.9;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+.support .item{
+    border-left: 3px solid orangered;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+.support .block2{
+    margin-left: 0px;
+}
+.ekspertiza p{
+    opacity: 0.7;
+}
+.ekspertiza span{
+    color: orangered;
+}
+.support .elem{
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(233, 227, 227, 0.5);
+    position: relative;
+}
+.support .block1{
+    padding: 15px;
+}
+.support .digit{
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.support .support-pic{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+.support .ekspertiza{
+    color: white;
+}
+.ekspertiza h2{
+    margin-bottom: 20px;
+}
+.ekspertiza .item{
+    padding-left: 15px;
+}
+.support .laptop{
+    width: 320px;
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+}
+.support .empty-space{
+    height: 320px;
+    opacity: 0;
+}
+
+/* support styles end */
+
+
+/* tarifs styles start rgb(233, 205, 157);*/
+
+.wrapper-tarifs{
+    padding-bottom: 45px;
+
+    background-image: url(../img/tarifs-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 1800px;
+}
+.tarifs{
+    padding-top: 95px;
+    font-weight: 500;
+}
+.tarifs .orange{
+    color: orangered;
+    font-size: 22px;
+    font-weight: bold;
+}
+.tarifs ul{
+    padding: 0;
+    margin-left: 20px;
+}
+.tarifs li{
+    list-style-image: url(../img/tarifs-galka.png);
+    margin-bottom: 10px;
+    opacity: 0.9;
+    font-size: 14px;
+}
+.tarifs button{
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: 1.5px solid orangered;
+    outline: none;
+    background-color: transparent;
+    color: orangered;
+    margin-top: 30px;
+}
+.tarifs p{
+    opacity: 0.5;
+}
+.tarifs a{
+    color: black;
+    font-size: 12px;
+}
+.tarifs a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+.tarifs hr{
+    border: 1px solid black;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.tarifs .row > h2{
+    font-weight: bold;
+}
+.tarifs .row{
+    padding: 15px;
+}
+.tarif1, .tarif2, .tarif3{
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(201, 190, 190);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 30px 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+:is(.tarif1:hover, .tarif2:hover, .tarif3:hover) button{
+    background-color: orangered;
+    color:white;
+}
+:is(.tarif1:hover, .tarif2:hover, .tarif3:hover){
+    background-color: white;
+}
+@media (min-width:768px) {
+    .tarif1:hover, .tarif2:hover, .tarif3:hover{
+        transform: scale(1.1);
+    }   
+}
+
+/* tarifs styles end */
+
+
+/* task-time styles start */
+
+.task-time{
+    padding-top: 45px;
+    font-weight: 500;
+}
+.task-time p{
+    opacity: 0.9;
+    font-size: 14px;
+}
+.task-time h1, .task-time h2{
+    font-weight: bold;
+}
+.task-time h1{
+    text-align: center;
+    font-size: 30px;
+}
+.task-time h2{
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+.task-time .pic{
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 200px;
+
+    background-image: url(../img/competensions-icon-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.task-time .row > div{
+    width: 230px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+/* task-time styles end */
+
+
+/* team styles start */
+
+.team{
+    padding: 45px 16px;
+}
+.team h2{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.team h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.team p{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.team .pic{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.team row{
+    width: 100%;
+}
+.team .item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.team button{
+    font-size: 12px;
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 190, 190);
+    outline: none;
+    background-color: white;
+    font-weight: 500;
+}
+
+/* team styles end */
+
+
+    /*styles for desktop*/
+
+@media screen and (min-width: 767px) {
+    
+    
+
+    /* nav-introduct styles start */
+    
+    .wrapper-nav-introduct{
+        padding-bottom: 70px;
+    }
+    .wrapper-nav{
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 20px;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-list li {
+        list-style-type: none;
+    }
+    .nav-list a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .nav-list a:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+    .navbar span{
+        font-size: 8px;
+    }
+
+    .introduct h2{
+        font-size: 52px;
+    }
+    .introduct .item2{
+        font-size: 18px;
+    }
+    .introduct .item{
+        margin-top: 75px;
+    }
+
+    /* nav-introduct styles end */
+
+
+    /* competensions styles start */
+
+    .competensions{
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    .competensions h2{
+        font-size: 42px;
+    }
+    .competensions p{
+        font-size: 16px;
+    }
+
+    /* competensions styles end */
+
+
+    /* support styles start */
+
+    .wrapper-support{
+        background-image: url(../img/support-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .support h2{
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+    .support .elem{
+        max-width: 315px;
+        margin-right: 5px;
+        height: 315px;
+    }
+    .support .laptop{
+        width: 500px;
+        left: 0px;
+        bottom: -80px;
+    }
+    .support .empty-space{
+        height: 210px;
+    }
+    .support .block2{
+        margin-bottom: 150px;
+    }
+
+    /* support styles end */
+
+
+    /* tarifs styles start */
+    .wrapper-tarifs{
+        padding-bottom: 100px;
+    
+        background-size: 1100px;
+    }
+    .tarifs h2{
+        font-size: 42px;
+    }
+    .tarifs li{
+        font-size: 17px;
+    }
+
+    /* tarifs tarifs styles end */
+
+
+    /* task-time styles start */
+
+    .task-time{
+        padding-top: 170px;
+    }
+    .task-time .row > div{
+        margin-left: 0px;
+    }
+    .task-time h1{
+        text-align: justify;
+    }
+    .task-time h2{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .task-time p{
+        font-size: 16px;
+    }
+
+    /* task-time styles end */
+
+
+    /* team styles start */
+    .team{
+        padding-top: 150px;
+    }
+    .team h2{
+        font-size: 42px;
+    }
+    .team p{
+        font-size: 16px;
+    }
+    .team .item{
+        padding-left: 75px;
+        padding-right: 75px;
+        margin-top: 65px;
+    }
+    .team button{
+        width: 250px;
+        height: 60px;
+        margin-top: 40px;
+    }
+
+    /* team styles end */
+
+
+    /*  styles start */
+
+    /*  styles end */
+}
+
+@media screen and (min-width: 1240px) {
+    /* support styles start */
+
+    .support .laptop{
+        width: 730px;
+        left: 0px;
+        bottom: -115px;
+    }
+    .support .empty-space{
+        height: 220px;
+    }
+    .support .block2{
+        margin-bottom: 150px;
+    }
+
+    /* support styles end */
+
+    .tarifs{
+        padding-top: 150px;
+    }
+}
