@@ -15,5 +15,19 @@ $(function(){
                 }
             }
         });
+        // -----LOCALSTORAGE-----
+        let fNa = document.getElementById("form-name").value;
+        let fPh = document.getElementById("form-phone").value;
+        let fEm = document.getElementById("form-email").value;
+
+        const LastInfoPerson = {
+            name: fNa,
+            phone: fPh,
+            email: fEm
+        }
+
+        localStorage.setItem('lastInfoPerson', JSON.stringify(LastInfoPerson));
+        console.log(localStorage.getItem('lastInfoPerson'));
+        // -----___________-----
     });
 });
