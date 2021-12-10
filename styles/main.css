@@ -433,6 +433,7 @@ html{
 
 .cases{
     padding: 15px;
+    font-weight: 500;
 }
 .cases h2{
     font-weight: 700;
@@ -447,6 +448,7 @@ html{
 }
 .cases p{
     font-size: 13px;
+    opacity: 0.8;
 }
 .cases .elem{
     position: relative;
@@ -490,6 +492,161 @@ html{
 }
 
 /* cases styles end */
+
+
+/* FAQ styles start */
+
+.faq{
+    font-weight: 550;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+.faq ol{
+    color: rgb(150, 142, 142);
+    font-size: 14px;
+}
+.faq li{
+    margin-bottom: 25px;
+}
+.faq h2{
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+.faq h4{
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+.faq .orange h4{
+    color: orangered;
+}
+
+/* FAQ styles end */
+
+
+/* feedback and links styles start */
+
+.wrapper-form{
+    color: white;
+    font-weight: 500;
+
+    background-color: #040613;
+
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.feedback, footer{
+    padding: 0px 5px;
+}
+
+.feedback{
+    padding-bottom: 60px;
+}
+.feedback a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.feedback h2{
+    font-size: 23px;
+    font-weight: 700;
+}
+.feedback h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.feedback p{
+    font-size: 14px;
+    opacity: 0.7;
+
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.feedback .icon{
+    margin-right: 10px;
+    width: 23px;
+}
+
+.feedback .form{
+    margin-top: 30px;
+}
+.feedback textarea{
+    height: 150px;
+}
+.feedback .form_input{
+    background: transparent;
+    outline: none;
+    width: 100%;
+    border: 0.5px solid rgb(104, 100, 100);
+    border-radius: 5px;
+
+    padding: 18px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+.feedback .form_input:focus:hover{
+    color: white;
+    border-color: orangered;
+}
+.feedback .form_input::placeholder{
+    color: white;
+}
+.feedback .form a{
+    text-decoration: none;
+    color: rgb(196, 72, 27);
+    font-size: 12px;
+}
+.feedback .form span{
+    color: rgb(196, 72, 27);
+}
+.feedback .form .checkbox_label{
+    font-size: 12px;
+}
+.feedback .form .checkbox_input{
+    width: 30px;
+}
+.feedback .form button{
+    font-size: 12px;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+
+    margin-top: 10px;
+}
+.feedback .form button:hover{
+    background-color: transparent;
+}
+
+
+.wrapper-form hr{
+    border: 1px solid white;
+}
+
+footer{
+    padding-top: 30px;
+}
+footer p{
+    font-weight: 400;
+    margin: 0;
+}
+footer .links{
+    margin-bottom: 12px;
+}
+
+
+/* feedback and links styles end */
+
 
     /*styles for desktop*/
 
@@ -683,14 +840,27 @@ html{
     /* cases styles end */
  
 
-    /*  styles start */
+    /* FAQ styles start */
 
-    /*  styles end */
+    .faq h2{
+        font-size: 42px;
+
+        margin-bottom: 90px;
+    }
+
+    /* FAQ styles end */
 
 
-    /*  styles start */
+    /* feedback and links styles start */
 
-    /*  styles end */
+    .feedback h2{
+        font-size: 42px;
+    }
+    .feedback .elem{
+        margin-top: 220px;
+    }
+
+    /* feedback and links styles end */
 }
 
 @media screen and (min-width: 1240px) {
