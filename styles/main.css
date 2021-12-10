@@ -429,6 +429,68 @@ html{
 /* team styles end */
 
 
+/* cases styles start */
+
+.cases{
+    padding: 15px;
+}
+.cases h2{
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+.cases .pic{
+    height: 120px;
+    background-image: url(../img/cases.jpg);
+    border-radius: 5px;
+}
+.cases p{
+    font-size: 13px;
+}
+.cases .elem{
+    position: relative;
+    height: 220px;
+    color: white;
+    background-image: url(../img/cases.jpg);
+    border-radius: 5px;
+}
+.cases .content{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+}
+.cases .item .pic{
+    margin-bottom: 15px;
+}
+.cases .item .p{
+    padding: 0px 10px;
+}
+.cases .item .p p{
+    margin-top: 5px;
+}
+.cases .data{
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+.cases h4{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.cases a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.cases .item .data{
+    margin-bottom: 20px;
+}
+
+/* cases styles end */
+
     /*styles for desktop*/
 
 @media screen and (min-width: 767px) {
@@ -595,6 +657,35 @@ html{
     }
 
     /* team styles end */
+
+
+    /* cases styles start */
+    .cases .elem{
+        height: 430px;
+    }
+    .cases h2{
+        font-size: 42px;
+
+        margin-bottom: 40px;
+    }
+    .cases h4{
+        font-size: 18px;
+    }
+    .cases .pic{
+        height: 180px;
+    }
+    .cases .item .p{
+        padding-top: 30px;
+    }
+    .cases p{
+        font-size: 14px;
+    }
+    /* cases styles end */
+ 
+
+    /*  styles start */
+
+    /*  styles end */
 
 
     /*  styles start */
