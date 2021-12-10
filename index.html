@@ -698,7 +698,7 @@
         </div>
         <div class="wrapper-form">
             <div class="container">
-                    <div class="feedback" id="form">
+                    <div class="feedback" id="feedback-form">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="row">
@@ -707,42 +707,39 @@
                                 </div>
                                 <div class="col-12">
                                     <p>Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</p>
-                                    <div class="number">
-                                        <div class="icon"></div>
+                                    <div class="feedback-number">
+                                        <div class="feedback-icon"></div>
                                         <h3>8 800 222-26-73</h3>
                                     </div>
-                                    <div class="email">
-                                        <div class="icon"></div>
+                                    <div class="feedback-email">
+                                        <div class="feedback-icon"></div>
                                         <a href="">info@drupal-coder.ru</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <form class="form" action="https://formcarry.com/s/46WaOUCdYYl" method="POST" accept-charset="UTF-8" id="form">
+                            <form class="ajaxForm" action="https://formcarry.com/s/46WaOUCdYYl" method="post" accept-charset="UTF-8" id="form" name="form">
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="text" name = "name" id="form-name" class="form_input _req" required>
+                                        <input type="text" name = "name" id="form-name" required>
                                         <label for="form-name" class="form_label">Ваше имя</label>
                                     </div>
                                     <div class="col-12">
-                                        <input type="number" name = "phone" id="form-phone" class="form_input _req _number" required>
+                                        <input type="number" name = "phone" id="form-phone" required>
                                         <label for="form-phone" class="form_label">Телефон</label>
                                     </div>
                                     <div class="col-12">
-                                        <input type="email" name = "email" id="form-email" class="form_input _req _email" required>
+                                        <input type="email" name = "email" id="form-email" required>
                                         <label for="form-email" class="form_label">E-mail</label>
                                     </div>
                                     <div class="col-12">
-                                        <textarea name="comment" id="form-comment" class="form_input" required></textarea>
+                                        <textarea name="comment" id="form-comment" required></textarea>
                                         <label for="form-comment" class="form_label">Ваш комментарий</label>
                                     </div>
                                     <div class="col-12">
-                                        <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input _req" required>
+                                        <input type="checkbox" name = "checkbox" id="form-checkbox" required>
                                         <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="g-recaptcha" data-sitekey="0000000000000000000000">Капча</div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="form_button">свяжитесь с нами</button>
@@ -773,12 +770,12 @@
                 </footer>
             </div>
         </div>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript" src="javascript/form.js"></script>
         <script type="text/javascript" src="javascript/sliderReviews.js"></script>
         <script type="text/javascript" src="javascript/sliderCollegues.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
