@@ -88,6 +88,8 @@ html{
     outline: none;
     background-color: transparent;
     color: white;
+
+    transition: all 0.3s ease;
 }
 .introduct button:hover{
     background-color: orangered;
@@ -534,13 +536,31 @@ html{
     font-weight: 500;
 
     background-color: #040613;
+    position: relative;
 
     padding-top: 35px;
     padding-bottom: 40px;
 }
+.wrapper-form .pic1{
+    position: absolute;
+    width: 160px;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    margin-left: -80px;
+}
+.wrapper-form .pic2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 200px;
+}
 
 .feedback, footer{
     padding: 0px 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .feedback{
@@ -623,6 +643,8 @@ html{
     font-weight: 500;
 
     margin-top: 10px;
+
+    transition: all 0.3s ease;
 }
 .feedback .form button:hover{
     background-color: transparent;
@@ -643,7 +665,11 @@ footer p{
 footer .links{
     margin-bottom: 12px;
 }
-
+footer .links a{
+    text-decoration: none;
+    color: white;
+    transform: rotate(45deg);
+}
 
 /* feedback and links styles end */
 
@@ -837,6 +863,12 @@ footer .links{
     .cases p{
         font-size: 14px;
     }
+    .cases .content{
+        bottom: 40px;
+        left: 40px;
+        right: 40px;
+    }
+    
     /* cases styles end */
  
 
@@ -852,6 +884,21 @@ footer .links{
 
 
     /* feedback and links styles start */
+
+    .wrapper-form .pic1{
+        width: 290px;
+        margin-left: -180px;
+    }
+    .wrapper-form .pic2{
+        width: 467px;
+    }
+
+    .feedback > .row:first-child{
+        padding-right: 70px;
+    }
+    .form{
+        padding-left: 70px;
+    }
 
     .feedback h2{
         font-size: 42px;
