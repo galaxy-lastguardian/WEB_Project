@@ -34,17 +34,32 @@ html{
 }
 /*изменение стилей поверх бутстрапа*/
 @media all and (min-width: 768px) {
+    .navbar .nav-item{
+        padding: 0 1rem;
+    }
+    .navbar .nav-item .nav-link{
+        padding: 0;
+    }
+    .navbar .nav-item .nav-link{
+        border-bottom: 3px solid #f04e3500;
+    }
+    .navbar .nav-item .nav-link:hover{
+        border-bottom: 3px solid #f04d35;
+    }
 	.navbar .nav-item .dropdown-menu{
         display: none;
         margin-top:0;
         border-radius: 0;
-        background-color: #f04d35; 
+        background-color: #f04d35;
     }
 	.navbar .nav-item .dropdown-menu .dropdown-item:hover{
         background-color: #d13018;
     }
 	.navbar .nav-item:hover .dropdown-menu{
-        display: block; 
+        display: block;
+        position: absolute;
+        top:17px;
+        left:14px;
     }
     .navbar .nav-item .dropdown-menu .dropdown-item{
         padding: 0;
@@ -54,6 +69,9 @@ html{
     }
     .navbar .nav-item .dropdown-menu .dropdown-item .nav-link{
         padding:3px 20px;
+    }
+    .nav-link:hover, .nav-link:focus{
+        color: white !important;
     }
 }	
 
@@ -120,7 +138,7 @@ html{
 }
 .introduct .img-cup-header{
     position: absolute;
-    top: -37px;
+    top: -24px;
 }
 .introduct .h3-to-hide{
     opacity: 0;
