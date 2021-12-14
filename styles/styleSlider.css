@@ -34,3 +34,9 @@
     width: 251px;
     height: 125px;
 }
+@media screen and (max-width: 767px){
+    .collegues-slider-main img, .collegues-slider-attach img {
+        width: 156px;
+        height: 75px;
+    }
+}
