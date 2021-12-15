@@ -25,12 +25,29 @@ html{
 
 /* navigation */
 .wrapper-nav-introduct{
-    background-image: url('../img/itroduct-bg.png');
+    background-color: rgb(3, 6, 12);
     padding-bottom: 35px;
     padding-top: 1px;
+    position: relative;
+}
+.wrapper-nav-introduct .video{
+    height: 100%;
+    width: 100%;
+    filter: brightness(25%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.wrapper-nav-introduct .video_media{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .wrapper-nav{
     display: none;
+    position: relative;
+    z-index: 1;
 }
 /*изменение стилей поверх бутстрапа*/
 @media all and (min-width: 768px) {
@@ -80,6 +97,8 @@ html{
     color: white;
     font-size: 14px;
     font-weight: 500;
+    position: relative;
+    z-index: 1;
 }
 .introduct h2{
     font-size: 24px;
