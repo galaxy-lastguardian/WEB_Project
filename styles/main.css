@@ -638,7 +638,7 @@ html{
     background: transparent;
     outline: none;
     width: 100%;
-    border: 0.5px solid rgb(104, 100, 100);
+    border: 1px solid rgba(256,256,256,.3);
     border-radius: 5px;
 
     padding: 18px;
@@ -646,10 +646,13 @@ html{
 
     font-size: 14px;
     font-weight: 500;
-}
-.feedback .form_input:focus:hover{
     color: white;
+
+    transition: all 0.2s ease;
+}
+.feedback .form_input:focus-visible{
     border-color: orangered;
+    box-shadow: 0 0 10px orangered;
 }
 .feedback .form_input::placeholder{
     color: white;
@@ -686,7 +689,12 @@ html{
 .feedback .ajaxForm button:hover{
     background-color: transparent;
 }
-
+.feedback .checkbox_label{
+    font-weight: 400;
+}
+.feedback a{
+    font-weight: 400;
+}
 
 .wrapper-form hr{
     border: 1px solid white;
@@ -705,7 +713,6 @@ footer .links{
 footer .links a{
     text-decoration: none;
     color: white;
-    transform: rotate(45deg);
 }
 
 /* feedback and links styles end */
