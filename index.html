@@ -766,8 +766,10 @@
                                         <textarea name="comment" placeholder="Ваш комментарий" id="form-comment" class="form_input" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input" required>
-                                        <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input" required>
+                                            <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="form_button">СВЯЖИТЕСЬ С НАМИ</button>
@@ -782,27 +784,25 @@
             <div class="container">
                 <footer>
                     <div class="links">
-                        <div class="row">
-                            <div class="col-3 col-md-1">
-                                <a href="#">
-                                    facebook
-                                </a>
-                            </div>
-                            <div class="col-3 col-md-1">
-                                <a href="#">
-                                    vkontakte
-                                </a>
-                            </div>
-                            <div class="col-3 col-md-1">
-                                <a href="#">
-                                    telegram
-                                </a>
-                            </div>
-                            <div class="col-3 col-md-1">
-                                <a href="#">
-                                    youtube
-                                </a>
-                            </div>
+                        <div class="link">
+                            <a href="#" class="f">
+                                <img src="img/facebook.png" alt="pic" class="pic">
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="vk">
+                                <img src="img/vk.png" alt="pic" class="pic">
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="tel">
+                                <img src="img/telegram.png" alt="pic" class="pic">
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="y">
+                                <img src="img/youtube.png" alt="pic" class="pic">
+                            </a>
                         </div>
                     </div>
                     <p>Проект ООО "Инитлаб", Краснодар, Россия.<br> Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>
