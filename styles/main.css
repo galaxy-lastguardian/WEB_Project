@@ -47,7 +47,7 @@ html{
 .wrapper-nav{
     display: none;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 /*изменение стилей поверх бутстрапа*/
 @media all and (min-width: 768px) {
@@ -697,7 +697,7 @@ html{
 }
 
 .wrapper-form hr{
-    border: 1px solid white;
+    border: 1px solid rgba(256,256,256,.3);
 }
 
 footer{
@@ -936,8 +936,9 @@ footer .links a{
     .wrapper-form .pic2{
         width: 467px;
     }
-    .ajaxForm{
+    .feedback .ajaxForm{
         padding-left: 70px;
+        margin-top: 0px;
     }
 
     .feedback h2{
