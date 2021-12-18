@@ -23,6 +23,71 @@ html{
 
 /* nav-introduct styles start */
 
+/* navigation-mobile */
+.mobile-menu{
+    background-color: rgb(3, 6, 12);
+    border-top: 2px solid rgb(161, 157, 157);
+
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.mobile-menu .menu-logo-pic{
+    height: 22px;
+}
+.mobile-menu .logo{
+    margin-left: 10px;
+}
+.mobile-menu hr{
+    border: 1px solid rgb(255, 255, 255);
+    width: 20px;
+    margin: 4px;
+}
+.mobile-menu #toggle{
+    appearance: none;
+}
+.mobile-menu #toggle:checked ~ .dropdown-div{
+    opacity: 1;
+    height: 620px;
+    pointer-events:visible;
+}
+.mobile-menu .dropdown-div{
+    opacity: 0;
+    height: 0px;
+    position: fixed;
+    z-index: 100;
+    bottom: 46px;
+
+    width: 100%;
+
+    background-color: rgb(3, 6, 12);
+
+    pointer-events:none;
+    transition: all 0.4s;
+}
+.mobile-menu .dropdown-div a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.mobile-menu .dropdown-div a:hover{
+    color: orangered;
+}
+.mobile-menu .nav-link{
+    border-top: 1px solid rgba(256,256,256,.3);
+}
+.mobile-menu .m{
+    padding-left: 34px;
+}
+
 /* navigation */
 .wrapper-nav-introduct{
     background-color: rgb(3, 6, 12);
@@ -64,19 +129,28 @@ html{
         border-bottom: 3px solid #f04d35;
     }
 	.navbar .nav-item .dropdown-menu{
-        display: none;
+        display: block;
+        height: 0;
+        opacity: 0;
         margin-top:0;
         border-radius: 0;
         background-color: #f04d35;
+
+        position: absolute;
+        top:17px;
+        left:14px;
+
+        pointer-events:none;
+
+        transition: all 0.3s;
     }
 	.navbar .nav-item .dropdown-menu .dropdown-item:hover{
         background-color: #d13018;
     }
 	.navbar .nav-item:hover .dropdown-menu{
-        display: block;
-        position: absolute;
-        top:17px;
-        left:14px;
+        height: 150px;
+        opacity: 1;
+        pointer-events:visible;
     }
     .navbar .nav-item .dropdown-menu .dropdown-item{
         padding: 0;
@@ -481,7 +555,7 @@ html{
     margin-bottom: 20px;
 }
 .cases .pic{
-    height: 120px;
+    height: 180px;
     background-image: url(../img/cases.jpg);
     border-radius: 5px;
 }
@@ -491,7 +565,7 @@ html{
 }
 .cases .elem{
     position: relative;
-    height: 220px;
+    height: 280px;
     color: white;
     background-image: url(../img/cases.jpg);
     border-radius: 5px;
@@ -537,13 +611,14 @@ html{
 
 .faq{
     font-weight: 550;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 40px;
+    padding-top: 65px;
 }
 .faq ol{
-    color: rgb(150, 142, 142);
-    font-size: 14px;
+    color: #828a9b;
+    font-size: 12px;
 }
 .faq li{
     margin-bottom: 25px;
@@ -555,12 +630,35 @@ html{
     margin-bottom: 15px;
 }
 .faq h4{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     color: black;
 }
+.faq .orange{
+    padding: 10px 12px 10px 32px;
+    margin-bottom: 10px;
+    position: relative;
+
+    border: 3px solid orangered;
+}
+.faq .orange::before{
+    content: "1.";
+    color: #828a9b;
+    font-size: 12px;
+
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
 .faq .orange h4{
     color: orangered;
+}
+.faq .orange p{
+    color: #4E5A73;
+    font-size: 16px;
+    font-weight: 500;
+
+    margin: 0;
 }
 
 /* FAQ styles end */
@@ -790,6 +888,10 @@ footer .links a{
 
     /* nav-introduct styles start */
     
+    .mobile-menu{
+        display: none;
+    }
+
     .wrapper-nav-introduct{
         padding-bottom: 70px;
     }
@@ -982,10 +1084,13 @@ footer .links a{
 
     /* FAQ styles start */
 
+    .faq{
+        padding: 120px 0px 60px;
+    }
     .faq h2{
         font-size: 42px;
 
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
 
     /* FAQ styles end */
