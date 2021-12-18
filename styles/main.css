@@ -481,7 +481,7 @@ html{
     margin-bottom: 20px;
 }
 .cases .pic{
-    height: 120px;
+    height: 180px;
     background-image: url(../img/cases.jpg);
     border-radius: 5px;
 }
@@ -491,7 +491,7 @@ html{
 }
 .cases .elem{
     position: relative;
-    height: 220px;
+    height: 280px;
     color: white;
     background-image: url(../img/cases.jpg);
     border-radius: 5px;
@@ -537,13 +537,14 @@ html{
 
 .faq{
     font-weight: 550;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 40px;
+    padding-top: 65px;
 }
 .faq ol{
-    color: rgb(150, 142, 142);
-    font-size: 14px;
+    color: #828a9b;
+    font-size: 12px;
 }
 .faq li{
     margin-bottom: 25px;
@@ -555,12 +556,35 @@ html{
     margin-bottom: 15px;
 }
 .faq h4{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     color: black;
 }
+.faq .orange{
+    padding: 10px 12px 10px 32px;
+    margin-bottom: 10px;
+    position: relative;
+
+    border: 3px solid orangered;
+}
+.faq .orange::before{
+    content: "1.";
+    color: #828a9b;
+    font-size: 12px;
+
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
 .faq .orange h4{
     color: orangered;
+}
+.faq .orange p{
+    color: #4E5A73;
+    font-size: 16px;
+    font-weight: 500;
+
+    margin: 0;
 }
 
 /* FAQ styles end */
@@ -982,10 +1006,13 @@ footer .links a{
 
     /* FAQ styles start */
 
+    .faq{
+        padding: 120px 0px 60px;
+    }
     .faq h2{
         font-size: 42px;
 
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
 
     /* FAQ styles end */
