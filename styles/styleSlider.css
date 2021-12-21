@@ -1,3 +1,5 @@
+
+/* первый слайдер */
 .reviews {
     border-radius: 5px;
     border: 1px solid rgba(51, 51, 51, 0.199);
@@ -5,7 +7,25 @@
     background: #fff;
     position: relative;
     z-index: 10;
+
+    padding: 80px 0px 80px 80px;
 }
+
+.wrapper-reviews{
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    background-image: url(../img/reviews-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 530px;
+}
+.wrapper-reviews h2{
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 40px;
+}
+
 .rev-content{
     display: block;
     max-width: 1000px;
@@ -57,9 +77,24 @@
 }
     
 }
+
+.reviews-slider .slide p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #838b9c;
+}
 .reviews-slider .slide .slide-review{
-    font-weight: bold;
-    padding:35px 0;
+    font-weight: 700;
+    padding-top: 35px;
+    margin-bottom: 25px;
+    color: #050c33;
+}
+.reviews-slider .slide a{
+    color: #050c33;
+}
+.reviews-slider .slide a:hover{
+    text-decoration: none;
 }
 
 .nav-reviews-border{
@@ -70,7 +105,7 @@
 }
 .nav-reviews .slick-slide-number{
     margin: 0 35px;
-    font-size: 32px;
+    font-size: 28px;
     vertical-align: middle;
 }
 .nav-reviews .amount-of-slides{
@@ -97,6 +132,8 @@
 }
 
 
+
+/* второй слайдер */
 #NextSlide {
     background: url("../img/arrow-right.png") no-repeat center;
     background-size: contain;
@@ -119,6 +156,22 @@
     outline: 0;
 }
 
+.collegues h2{
+    font-weight: 700;
+    font-size: 42px;
+
+    text-align: center;
+}
+.collegues-head{
+    color: #505570;
+    font-weight: 500;
+
+    padding: 0px 15px;
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
 .collegues-slider-main .slide, .collegues-slider-attach .slide {
     margin: 10px;
     padding: -100px;
@@ -129,8 +182,40 @@
     height: 125px;
 }
 @media screen and (max-width: 767px){
+    /* первый слайдер */
+    .reviews{
+        padding: 30px;
+    }
+    .reviews-slider .slide .slide-review{
+        margin-bottom: 15px;
+    }
+    .wrapper-reviews h2{
+        font-size: 24px;
+
+        margin-bottom: 0px;
+    }
+    .wrapper-reviews{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        background-size: 130px;
+    }
+
+
+    /* второй слайдер */
     .collegues-slider-main img, .collegues-slider-attach img {
         width: 156px;
         height: 75px;
+    }
+    .collegues h2{
+        font-size: 24px;
+        justify-content:safe;
+
+        margin-bottom: 15px;
+    }
+    .collegues-head{
+        text-align: justify;
+
+        margin-bottom: 15px;
     }
 }
