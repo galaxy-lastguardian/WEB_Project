@@ -136,6 +136,7 @@ html{
         border-radius: 0;
         background-color: #f04d35;
 
+        overflow: hidden;
         position: absolute;
         top:17px;
         left:14px;
