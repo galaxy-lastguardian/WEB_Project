@@ -46,10 +46,8 @@ html{
 .mobile-menu .logo{
     margin-left: 10px;
 }
-.mobile-menu hr{
-    border: 1px solid rgb(255, 255, 255);
-    width: 20px;
-    margin: 4px;
+.mobile-menu .opt{
+    width: 25px;
 }
 .mobile-menu #toggle{
     appearance: none;
