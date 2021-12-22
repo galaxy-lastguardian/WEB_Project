@@ -14,7 +14,45 @@
         <link rel="stylesheet" type="text/css" href="styles/styleSlider.css"/>
     </head>
     <body>
+        <div class="mobile-menu">
+            <div class="logo">
+                <a href="" class="menu-logo-link">
+                    <img src="./img/nav-logo.png" alt="logo" class="menu-logo-pic">
+                </a>
+            </div>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <hr>
+                <hr>
+                <hr>
+            </label>
+
+            <div class="dropdown-div">
+                <a href="#" class="nav-link">поддержка drupal</a>
+                <a href="#" class="nav-link dropdown-toggle">администрирование</a>
+                <a href="#" class="nav-link m">миграция</a>
+                <a href="#" class="nav-link m">бэкапы</a>
+                <a href = "#" class = "nav-link m">аудит безопасности</a>
+                <a href = "#" class = "nav-link m">оптимизация скорости</a>
+                <a href = "#" class = "nav-link m">переезд на https</a>
+                <a href="#" class="nav-link">продвижение</a>
+                <a href="#" class="nav-link">реклама</a>
+                <a href="#" class="nav-link dropdown-toggle">о нас</a>
+                <a href = "#" class = "nav-link m">команда</a>
+                <a href = "#" class = "nav-link m">drupalgive</a>
+                <a href = "#" class = "nav-link m">блог</a>
+                <a href = "#" class = "nav-link m">курсы drupal</a>
+                <a href = "#" class = "nav-link m">вакансии</a>
+                <a href="#" class="nav-link">проекты</a>
+                <a href="#" class="nav-link">контакты</a>
+            </div>
+
+        </div>
+        
         <div class="wrapper-nav-introduct">
+            <div class="video">
+                <video class="video_media" src="img/video.mp4" autoplay muted loop></video>
+            </div>
             <div class="wrapper-nav">
                 <div class="container">
                     <div class="navbar">
@@ -24,37 +62,38 @@
                             </a>
                         </div>
                         <nav>
-                            <ul class="nav-list">
-                                <li class = "nav-item">
-                                    <a href="#" class="nav-link">поддержка drupal</a>
-                                </li>
-                                <li class = "nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" role="link" id="dropdownMenu1Link" data-bs-toggle="dropdown" aria-expanded="false">администрирование</a>
-                                    <ul class = "dropdown-menu" aria-labelledby="dropdownMenu1Link">
-                                        <li class = "dropdown-item">
-                                            <a href = "#" class = "nav-link">миграция</a>
-                                        </li>
-                                        <li class = "dropdown-item">
-                                            <a href = "#" class = "nav-link">бэкапы</a>
-                                        </li>
-                                        <li class = "dropdown-item">
-                                            <a href = "#" class = "nav-link">аудит безопасности</a>
-                                        </li>
-                                        <li class = "dropdown-item">
-                                            <a href = "#" class = "nav-link">оптимизация скорости</a>
-                                        </li>
-                                        <li class = "dropdown-item">
-                                            <a href = "#" class = "nav-link">переезд на https</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href="#" class="nav-link">продвижение</a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href="#" class="nav-link">реклама</a>
-                                <li class = "nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" role="link" id="dropdownMenu2Link" data-bs-toggle="dropdown" aria-expanded="false">о наc</a>
+                            <div class="content" id ="info-nav">
+                                <ul class="nav-list">
+                                    <li class = "nav-item">
+                                        <a href="#" class="nav-link">поддержка drupal</a>
+                                    </li>
+                                    <li class = "nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="link" id="dropdownMenu1Link" data-bs-toggle="dropdown" aria-expanded="false">администрирование</a>
+                                        <ul class = "dropdown-menu" aria-labelledby="dropdownMenu1Link">
+                                            <li class = "dropdown-item">
+                                                <a href = "#" class = "nav-link">миграция</a>
+                                            </li>
+                                            <li class = "dropdown-item">
+                                                <a href = "#" class = "nav-link">бэкапы</a>
+                                            </li>
+                                            <li class = "dropdown-item">
+                                                <a href = "#" class = "nav-link">аудит безопасности</a>
+                                            </li>
+                                            <li class = "dropdown-item">
+                                                <a href = "#" class = "nav-link">оптимизация скорости</a>
+                                            </li>
+                                            <li class = "dropdown-item">
+                                                <a href = "#" class = "nav-link">переезд на https</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href="#" class="nav-link">продвижение</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href="#" class="nav-link">реклама</a>
+                                    <li class = "nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="link" id="dropdownMenu2Link" data-bs-toggle="dropdown" aria-expanded="false">о наc</a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2Link">
                                             <li class = "dropdown-item">
                                                 <a href = "#" class = "nav-link">команда</a>
@@ -72,14 +111,15 @@
                                                 <a href = "#" class = "nav-link">вакансии</a>
                                             </li>
                                         </ul>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href="#" class="nav-link">проекты</a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a href="#" class="nav-link">контакты</a>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href="#" class="nav-link">проекты</a>
+                                    </li>
+                                    <li class = "nav-item">
+                                        <a href="#" class="nav-link">контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                 </div>
@@ -219,7 +259,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper-support">
+        <div class="wrapper-support"> 
             <div class="container">
                 <div class="support">
                     <div class="row text-center">
@@ -536,154 +576,172 @@
         </div>
         <div class="wrapper-reviews">
             <div class="container">
-                <div class="reviews">
-                    <div class="row text-center">
-                        <h2>Отзывы</h2>
-                    </div>
-                    <div class="reviews-slider">
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/logo_0.png" alt="ciel_parfum" loading="lazy" class="img-reviews">
+                <div class="row text-center">
+                    <h2>Отзывы</h2>
+                </div>
+                <div class="rev-content">
+                    <div class="reviews my-5">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 px-md-5">
+                                <div class="reviews-slider">
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/logo_0.png" alt="ciel_parfum" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть, привели меня на сайт и, в итоге, к ребятам из Drupal-coder. И вот уже практически полгода как не проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! Починили все, что не работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж мелких починок и доработок - не счесть! И главное - все качественно и быстро (не взирая на не самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит и предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман починят, поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. Надеюсь, что наше сотрудничество затянется надолго! Спасибо!!!</p>
+                                        <p>С уважением, Наталья Сушкова руководитель Отдела веб-проектов Группы компаний "Си Эль парфюм" <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a></p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/logo.png" alt="personal_writer" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Сергей — профессиональный, высококвалифицированый программист с огромным опытом в ИТ. Я долгое время общался с топ-фрилансерами (вся первая двадцатка) на веблансере и могу сказать, что С СЕРГЕЕМ ОНИ И РЯДОМ НЕ ВАЛЯЛИСЬ. Работаем с Сергеем до сих пор. С ним приятно работать, я доволен. </p>
+                                        <p>Сергей Чепурко, руководитель проекта <a href="http://www.personal-writer.com/" tabindex="0">www.personal-writer.com</a>/<a href="http://www.writers-united.org/" tabindex="0">www.writers-united.org</a></p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/farbors_ru.jpg" alt="farbors" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Выражаю глубочайшую благодарность команде специалистов компании "Инитлаб" и лично Дмитрию Купянскому и Алексею Синице. Сайт был первоклассно перевёрстан из старой табличной модели в новую на базе Drupal с дополнительной функциональностью. Всё было сделано с высочайшим качеством и точно в сроки. Всем кому хочется без нервов и лишних вопросов разработать сайт рекомендую обращаться именно к этой команде профессионалов.</p>
+                                        <p>Леонид Александрович Ледовский</p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/nashagazeta_ch.png" alt="nashagazeta" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Моя электронная газета www.nashagazeta.ch существует в Швейцарии уже 10 лет. За это время мы сменили 7 специалистов по техподдержке, и только сейчас, в последние несколько месяцев, с начала сотрудничества с Алексеем Синицей и его командой, я впервые почувствовала, что у меня есть надежный технический тыл. Без громких слов и обещаний, ребята просто спокойно и качественно делают работу, быстро реагируют, находят решения, предлагают конкретные варианты улучшения функционирования сайта и сами их оперативно осуществляют. Сотрудничество с ними – одно удовольствие!</p>
+                                        <p>Надежда Сикорская, Женева, Швейцария</p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/logo-estee.png" alt="estee" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Наша компания Estee Design занимается дизайном интерьеров. Сайт сверстан на Drupal. Искали программистов под выполнение ряда небольших изменений и корректировок по сайту.
+                                            Пообщавшись с Алексеем Синицей, приняли решение о начале работ с компанией Initlab/drupal-coder. Сотрудничеством довольны на 100%. Четкая и понятная система коммуникации, достаточно оперативное решение по задачам. Дали рекомендации по улучшению програмной части сайта, исправили ряд скрытых ошибок.
+                                            Никогда не пишу отзывы (нет времени), но в данном случае, по просьбе Алексея, не могу не рекомендовать Initlab другим людям - действительно компания профессионалов.
+                                        </p>
+                                        <p>Кузин Вадим, руководитель строительного направления Дизайн-бюро интерьеров Estee <a href="http://estee-design.ru" tabindex="0">estee-design.ru</a></p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/cableman_ru.png" alt="cableman" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Наша компания за несколько лет сменила несколько команд программистов и специалистов техподдержки, и почти отчаялась найти на российском рынке адекватное профессиональное предложение по разумной цене. Пока мы не начали работать с командой "Инитлаб", воплощающей в себе все наши представления о нормальной системе взаимодействия в сочетании с профессиональным неравнодушием. Впервые в моей деловой практике я чувствую надежно прикрытыми важнейшие задачи в жизни электронного СМИ, при том, что мои коллеги работают за сотни километров от нас и мы никогда не встречались лично.</p>
+                                        <p>Константин Бельский, зам. генерального директора портала <a href="http://www.cableman.ru/" tabindex="0">Кабельщик.ру</a></p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/logo_2.png" alt="serebro" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">За довольно продолжительный срок (2014 - 2016 годы) весьма плотной работы (интернет-магазин на безумно замороченном Drupal 6: устраняли косяки разработчиков, ускоряли сайт, сделали множество новых функций и т.п.) - только самые добрые эмоции от работы с командой Initlab / Drupal-coder: всегда можно рассчитывать на быструю и толковую помощь, поддержку, совет. Даже сейчас, не смотря на то, что мы почти год не работали на постоянной основе (банально закончились задачи), случайно возникшая проблема с сайтом была решена мгновенно! В общем, только самые искренние благодарности и рекомендации! 
+                                            Спасибо! )</p>
+                                            <p>С уважением, Владислав, <a href="http://serebro.ag" tabindex="0">Serebro.Ag</a></p>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="company-logo">
+                                            <img src="img/lpcma_rus_v4.jpg" alt="lab" loading="lazy" class="img-reviews">
+                                        </div>
+                                        <p class="slide-review">Хотел поблагодарить за работу над нашими сайтами.
+                                            За 4 месяца работы привели сайт в порядок, а самое главное получили инструмент, с помощью мы теперь можем быстро и красиво выставлять контент для образования и работы с предприятиями
+                                            http://lpcma.tsu.ru/ru/post/reference_material
+                                            Ну и многому научись благодаря работе с вами. Мы очень рады, что удалось найти настолько компетентных ребят )</p>
+                                            <p>Дмитрий Новиков, <a href="http://lpcma.tsu.ru" tabindex="0">lpcma.tsu.ru</a></p>
+                                    </div>
+                                </div>
                             </div>
-                            <p>Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть, привели меня на сайт и, в итоге, к ребятам из Drupal-coder. И вот уже практически полгода как не проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! Починили все, что не работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж мелких починок и доработок - не счесть! И главное - все качественно и быстро (не взирая на не самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит и предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман починят, поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. Надеюсь, что наше сотрудничество затянется надолго! Спасибо!!!</p>
-                            <p>С уважением, Наталья Сушкова руководитель Отдела веб-проектов Группы компаний "Си Эль парфюм" <a href="http://www.cielparfum.com/" tabindex="0">http://www.cielparfum.com/</a></p>
+                            <div class="col-12 col-lg-4 d-flex justify-content-center nav-reviews-border p-3 ">
+                                <!--/* Навигация слайдера */-->
+                                <div class="nav-reviews d-lg-flex align-items-lg-center">
+                                    <nav role="navigation" class="slick__arrow">
+                                        <div class="slick__arrow-wrapper d-lg-flex align-items-lg-center">
+                                            <button type="button" aria-label="Previous" class="slick-prev slick-arrow" id="PrevSlide">Previous</button>
+                                            <span class="slick-slide-number">
+                                                <span class="current-slide">01 </span><span class="amount-of-slides">/ 08</span>
+                                            </span>
+                                            <button type="button" aria-label="Next" class="slick-next slick-arrow" id="NextSlide">Next</button>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/logo.png" alt="personal_writer" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>Сергей — профессиональный, высококвалифицированый программист с огромным опытом в ИТ. Я долгое время общался с топ-фрилансерами (вся первая двадцатка) на веблансере и могу сказать, что С СЕРГЕЕМ ОНИ И РЯДОМ НЕ ВАЛЯЛИСЬ. Работаем с Сергеем до сих пор. С ним приятно работать, я доволен. </p>
-                            <p>Сергей Чепурко, руководитель проекта <a href="http://www.personal-writer.com/" tabindex="0">www.personal-writer.com</a>/<a href="http://www.writers-united.org/" tabindex="0">www.writers-united.org</a></p>
-                        </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/farbors_ru.jpg" alt="farbors" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>Выражаю глубочайшую благодарность команде специалистов компании "Инитлаб" и лично Дмитрию Купянскому и Алексею Синице. Сайт был первоклассно перевёрстан из старой табличной модели в новую на базе Drupal с дополнительной функциональностью. Всё было сделано с высочайшим качеством и точно в сроки. Всем кому хочется без нервов и лишних вопросов разработать сайт рекомендую обращаться именно к этой команде профессионалов.</p>
-                            <p>Леонид Александрович Ледовский</p>
-                        </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/nashagazeta_ch.png" alt="nashagazeta" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>Моя электронная газета www.nashagazeta.ch существует в Швейцарии уже 10 лет. За это время мы сменили 7 специалистов по техподдержке, и только сейчас, в последние несколько месяцев, с начала сотрудничества с Алексеем Синицей и его командой, я впервые почувствовала, что у меня есть надежный технический тыл. Без громких слов и обещаний, ребята просто спокойно и качественно делают работу, быстро реагируют, находят решения, предлагают конкретные варианты улучшения функционирования сайта и сами их оперативно осуществляют. Сотрудничество с ними – одно удовольствие!</p>
-                            <p>Надежда Сикорская, Женева, Швейцария</p>
-                        </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/logo-estee.png" alt="estee" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>Наша компания Estee Design занимается дизайном интерьеров. Сайт сверстан на Drupal. Искали программистов под выполнение ряда небольших изменений и корректировок по сайту.
-                                Пообщавшись с Алексеем Синицей, приняли решение о начале работ с компанией Initlab/drupal-coder. Сотрудничеством довольны на 100%. Четкая и понятная система коммуникации, достаточно оперативное решение по задачам. Дали рекомендации по улучшению програмной части сайта, исправили ряд скрытых ошибок.
-                                Никогда не пишу отзывы (нет времени), но в данном случае, по просьбе Алексея, не могу не рекомендовать Initlab другим людям - действительно компания профессионалов.
-                                </p>
-                            <p>Кузин Вадим, руководитель строительного направления Дизайн-бюро интерьеров Estee <a href="http://estee-design.ru" tabindex="0">estee-design.ru</a></p>
-                        </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/cableman_ru.png" alt="cableman" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>Наша компания за несколько лет сменила несколько команд программистов и специалистов техподдержки, и почти отчаялась найти на российском рынке адекватное профессиональное предложение по разумной цене. Пока мы не начали работать с командой "Инитлаб", воплощающей в себе все наши представления о нормальной системе взаимодействия в сочетании с профессиональным неравнодушием. Впервые в моей деловой практике я чувствую надежно прикрытыми важнейшие задачи в жизни электронного СМИ, при том, что мои коллеги работают за сотни километров от нас и мы никогда не встречались лично.</p>
-                            <p>Константин Бельский, зам. генерального директора портала <a href="http://www.cableman.ru/" tabindex="0">Кабельщик.ру</a></p>
-                        </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/logo_2.png" alt="serebro" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>За довольно продолжительный срок (2014 - 2016 годы) весьма плотной работы (интернет-магазин на безумно замороченном Drupal 6: устраняли косяки разработчиков, ускоряли сайт, сделали множество новых функций и т.п.) - только самые добрые эмоции от работы с командой Initlab / Drupal-coder: всегда можно рассчитывать на быструю и толковую помощь, поддержку, совет. Даже сейчас, не смотря на то, что мы почти год не работали на постоянной основе (банально закончились задачи), случайно возникшая проблема с сайтом была решена мгновенно! В общем, только самые искренние благодарности и рекомендации!
-                                Спасибо! )</p>
-                            <p>С уважением, Владислав, <a href="http://serebro.ag" tabindex="0">Serebro.Ag</a></p>
-                        </div>
-                        <div class="slide">
-                            <div class="company-logo">
-                                <img src="img/lpcma_rus_v4.jpg" alt="lab" loading="lazy" class="img-reviews">
-                            </div>
-                            <p>Хотел поблагодарить за работу над нашими сайтами.
-                                За 4 месяца работы привели сайт в порядок, а самое главное получили инструмент, с помощью мы теперь можем быстро и красиво выставлять контент для образования и работы с предприятиями
-                                http://lpcma.tsu.ru/ru/post/reference_material
-                                Ну и многому научись благодаря работе с вами. Мы очень рады, что удалось найти настолько компетентных ребят )</p>
-                            <p>Дмитрий Новиков, <a href="http://lpcma.tsu.ru" tabindex="0">lpcma.tsu.ru</a></p>
-                        </div>
-                    </div>
-                    <div class="nav-reviews">
-                        <nav role="navigation" class="slick__arrow">
-    <!--/* Навигация слайдера */-->
-                            <div class="slick__arrow-wrapper">
-                                <button type="button" aria-label="Previous" class="slick-prev slick-arrow" id="PrevSlide">Previous</button>
-                                <span class="slick-slide-number">
-                                    <span class="current-slide">01</span> / 08
-                                </span>
-                                <button type="button" aria-label="Next" class="slick-next slick-arrow" id="NextSlide">Next</button>
-                            </div>
-                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="wrapper-main">
-            <div class="container-fluid">
+<!--        <div class="wrapper-main">-->
+<!--            <div class="container-fluid">-->
                 <div class="collegues">
-                    <div class="row text-center">
+                    <div class="row">
                         <h2>С нами работают</h2>
-                        <div class="collegues-head">Десятки компаний доверяют нам самое ценное, что у них есть в интернете - свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</div>
+                        <div class="collegues-head">Десятки компаний доверяют нам самое ценное, что у них есть в интернете - свои <br> сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</div>
                     </div>
                     <div class="collegues-slider-main">
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.1.png" alt="ic1" style="">
+                            <img src="img/company-1.png" alt="ic1">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.2.png" alt="ic2" style="">
+                            <img src="img/company-2.png" alt="ic2">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.5.png" alt="ic3" style="">
+                            <img src="img/company-3.png" alt="ic3">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.6.png" alt="ic4" style="">
+                            <img src="img/company-4.png" alt="ic4">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.2.png" alt="ic5" style="">
+                            <img src="img/company-5.png" alt="ic5">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.5.png" alt="ic6" style="">
+                            <img src="img/company-6.png" alt="ic6">
+                        </div>
+                        <div class="slide">
+                            <img src="img/company-7.png" alt="ic6">
+                        </div>
+                        <div class="slide">
+                            <img src="img/company-8.png" alt="ic6" >
                         </div>
                     </div>
                     <div class="collegues-slider-attach">
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.2.png" alt="ica2" style="">
+                            <img src="img/company-9.png" alt="ica2">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.6.png" alt="ica6" style="">
+                            <img src="img/company-10.png" alt="ica6">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.1.png" alt="ica4" style="">
+                            <img src="img/company-11.png" alt="ica4">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.5.png" alt="ica1" style="">
+                            <img src="img/company-12.png" alt="ica1">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.6.png" alt="ica5" style="">
+                            <img src="img/company-13.png" alt="ica5">
                         </div>
                         <div class="slide">
-                            <img src="img_collegues/group1/Frame%203.1.png" alt="ica3" style="">
+                            <img src="img/company-14.png" alt="ica3">
+                        </div>
+                        <div class="slide">
+                            <img src="img/company-15.png" alt="ic6">
+                        </div>
+                        <div class="slide">
+                            <img src="img/company-16.png" alt="ic6">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
         <div class="wrapper-main">
             <div class="container">
                 <div class="faq">
                     <div class="row text-center">
                         <h2>FAQ</h2>
                     </div>
+                    <div class="orange">
+                        <h4>Кто непосредственно занимается поддержкой?</h4>
+                        <p>Сайты поддерживают штатные сотрудники ООО "Инитлаб", г. Краснодар, прошедшие специальное обучение и имеющие опыт работы с Друпал от 4 до 15 лет: 8 web-разработчиков, 2 специалиста по SEO, 4 системных администратора.</p>
+                    </div>
                     <ol>
-                        <div class="orange">
-                            <li>
-                                <h4>Кто непосредственно занимается поддержкой?</h4>
-                                <p>Сайты поддерживают штатные сотрудники ООО "Инитлаб", г. Краснодар, прошедшие специальное обучение и имеющие опыт работы с Друпал от 4 до 15 лет: 8 web-разработчиков, 2 специалиста по SEO, 4 системных администратора.</p>
-                            </li>
-                        </div>
-                        <li>
+                        <li value="2">
                             <h4>Как организована работа поддержки?</h4>
                         </li>
                         <li>
@@ -721,11 +779,13 @@
             </div>
         </div>
         <div class="wrapper-form">
+            <img src="img/footer-pic1.svg" alt="drupal-coder" class="pic1">
+            <img src="img/footer-pic2.png" alt="drupal-coder" class="pic2">
             <div class="container">
-                    <div class="feedback" id="feedback-form">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="row">
+                <div class="feedback" id="feedback-form">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row">
                                 <div class="col-12 text-center text-md-start">
                                     <h2>Оставить заявку на поддержку сайта</h2>
                                 </div>
@@ -759,8 +819,10 @@
                                         <textarea name="comment" placeholder="Ваш комментарий" id="form-comment" class="form_input" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input" required>
-                                        <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name = "checkbox" id="form-checkbox" class="checkbox_input" required>
+                                            <label for="form-checkbox" class="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="form_button">СВЯЖИТЕСЬ С НАМИ</button>
@@ -775,19 +837,25 @@
             <div class="container">
                 <footer>
                     <div class="links">
-                        <div class="row">
-                            <div class="col-1">
-                                <a href="#"><img src="" alt="f" class="icon"></a>
-                            </div>
-                            <div class="col-1">
-                                <a href="#"><img src="" alt="vk" class="icon"></a>
-                            </div>
-                            <div class="col-1">
-                                <a href="#"><img src="" alt="t" class="icon"></a>
-                            </div>
-                            <div class="col-1">
-                                <a href="#"><img src="" alt="y" class="icon"></a>
-                            </div>
+                        <div class="link">
+                            <a href="#" class="f">
+                                <img src="img/facebook.png" alt="pic" class="pic">
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="vk">
+                                <img src="img/vk.png" alt="pic" class="pic">
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="tel">
+                                <img src="img/telegram.png" alt="pic" class="pic">
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="y">
+                                <img src="img/youtube.png" alt="pic" class="pic">
+                            </a>
                         </div>
                     </div>
                     <p>Проект ООО "Инитлаб", Краснодар, Россия.<br> Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>

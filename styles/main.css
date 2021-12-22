@@ -23,28 +23,134 @@ html{
 
 /* nav-introduct styles start */
 
+/* navigation-mobile */
+.mobile-menu{
+    background-color: rgb(3, 6, 12);
+    border-top: 2px solid rgb(161, 157, 157);
+
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.mobile-menu .menu-logo-pic{
+    height: 22px;
+}
+.mobile-menu .logo{
+    margin-left: 10px;
+}
+.mobile-menu hr{
+    border: 1px solid rgb(255, 255, 255);
+    width: 20px;
+    margin: 4px;
+}
+.mobile-menu #toggle{
+    appearance: none;
+}
+.mobile-menu #toggle:checked ~ .dropdown-div{
+    opacity: 1;
+    height: 620px;
+    pointer-events:visible;
+}
+.mobile-menu .dropdown-div{
+    opacity: 0;
+    height: 0px;
+    position: fixed;
+    z-index: 100;
+    bottom: 46px;
+
+    width: 100%;
+
+    background-color: rgb(3, 6, 12);
+
+    pointer-events:none;
+    transition: all 0.4s;
+}
+.mobile-menu .dropdown-div a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.mobile-menu .dropdown-div a:hover{
+    color: orangered;
+}
+.mobile-menu .nav-link{
+    border-top: 1px solid rgba(256,256,256,.3);
+}
+.mobile-menu .m{
+    padding-left: 34px;
+}
+
 /* navigation */
 .wrapper-nav-introduct{
-    background-image: url('../img/itroduct-bg.png');
+    background-color: rgb(3, 6, 12);
     padding-bottom: 35px;
     padding-top: 1px;
+    position: relative;
+}
+.wrapper-nav-introduct .video{
+    height: 100%;
+    width: 100%;
+    filter: brightness(25%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.wrapper-nav-introduct .video_media{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .wrapper-nav{
     display: none;
+    position: relative;
+    z-index: 2;
 }
 /*изменение стилей поверх бутстрапа*/
 @media all and (min-width: 768px) {
+    .navbar .nav-item{
+        padding: 0 1rem;
+    }
+    .navbar .nav-item .nav-link{
+        padding: 0;
+    }
+    .navbar .nav-item .nav-link{
+        border-bottom: 3px solid #f04e3500;
+    }
+    .navbar .nav-item .nav-link:hover{
+        border-bottom: 3px solid #f04d35;
+    }
 	.navbar .nav-item .dropdown-menu{
-        display: none;
+        display: block;
+        height: 0;
+        opacity: 0;
         margin-top:0;
         border-radius: 0;
-        background-color: #f04d35; 
+        background-color: #f04d35;
+
+        position: absolute;
+        top:17px;
+        left:14px;
+
+        pointer-events:none;
+
+        transition: all 0.3s;
     }
 	.navbar .nav-item .dropdown-menu .dropdown-item:hover{
         background-color: #d13018;
     }
 	.navbar .nav-item:hover .dropdown-menu{
-        display: block; 
+        height: 150px;
+        opacity: 1;
+        pointer-events:visible;
     }
     .navbar .nav-item .dropdown-menu .dropdown-item{
         padding: 0;
@@ -55,6 +161,9 @@ html{
     .navbar .nav-item .dropdown-menu .dropdown-item .nav-link{
         padding:3px 20px;
     }
+    .nav-link:hover, .nav-link:focus{
+        color: white !important;
+    }
 }	
 
 /* introductory */
@@ -62,6 +171,8 @@ html{
     color: white;
     font-size: 14px;
     font-weight: 500;
+    position: relative;
+    z-index: 1;
 }
 .introduct h2{
     font-size: 24px;
@@ -88,6 +199,8 @@ html{
     outline: none;
     background-color: transparent;
     color: white;
+
+    transition: all 0.3s ease;
 }
 .introduct button:hover{
     background-color: orangered;
@@ -120,7 +233,7 @@ html{
 }
 .introduct .img-cup-header{
     position: absolute;
-    top: -37px;
+    top: -24px;
 }
 .introduct .h3-to-hide{
     opacity: 0;
@@ -442,7 +555,7 @@ html{
     margin-bottom: 20px;
 }
 .cases .pic{
-    height: 120px;
+    height: 180px;
     background-image: url(../img/cases.jpg);
     border-radius: 5px;
 }
@@ -452,7 +565,7 @@ html{
 }
 .cases .elem{
     position: relative;
-    height: 220px;
+    height: 280px;
     color: white;
     background-image: url(../img/cases.jpg);
     border-radius: 5px;
@@ -498,13 +611,14 @@ html{
 
 .faq{
     font-weight: 550;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 40px;
+    padding-top: 65px;
 }
 .faq ol{
-    color: rgb(150, 142, 142);
-    font-size: 14px;
+    color: #828a9b;
+    font-size: 12px;
 }
 .faq li{
     margin-bottom: 25px;
@@ -516,12 +630,35 @@ html{
     margin-bottom: 15px;
 }
 .faq h4{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     color: black;
 }
+.faq .orange{
+    padding: 10px 12px 10px 32px;
+    margin-bottom: 10px;
+    position: relative;
+
+    border: 3px solid orangered;
+}
+.faq .orange::before{
+    content: "1.";
+    color: #828a9b;
+    font-size: 12px;
+
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
 .faq .orange h4{
     color: orangered;
+}
+.faq .orange p{
+    color: #4E5A73;
+    font-size: 16px;
+    font-weight: 500;
+
+    margin: 0;
 }
 
 /* FAQ styles end */
@@ -534,22 +671,43 @@ html{
     font-weight: 500;
 
     background-color: #040613;
+    position: relative;
 
     padding-top: 35px;
     padding-bottom: 40px;
 }
+.wrapper-form .pic1{
+    position: absolute;
+    width: 160px;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    margin-left: -80px;
+}
+.wrapper-form .pic2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 200px;
+}
 
 .feedback, footer{
     padding: 0px 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .feedback{
     padding-bottom: 60px;
 }
-.feedback a{
+.feedback .email a{
     color: white;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 600;
+}
+.feedback .email a:hover{
+    color: white;
 }
 .feedback h2{
     font-size: 23px;
@@ -581,7 +739,7 @@ html{
     background: transparent;
     outline: none;
     width: 100%;
-    border: 0.5px solid rgb(104, 100, 100);
+    border: 1px solid rgba(256,256,256,.3);
     border-radius: 5px;
 
     padding: 18px;
@@ -589,24 +747,24 @@ html{
 
     font-size: 14px;
     font-weight: 500;
-}
-.feedback .form_input:focus:hover{
     color: white;
+
+    transition: all 0.2s ease;
+}
+.feedback .form_input:focus-visible{
     border-color: orangered;
+    box-shadow: 0 0 10px orangered;
 }
 .feedback .form_input::placeholder{
     color: white;
 }
 .feedback .ajaxForm a{
     text-decoration: none;
-    color: rgb(196, 72, 27);
+    color: rgb(236, 76, 17);
     font-size: 12px;
 }
 .feedback .ajaxForm span{
-    color: rgb(196, 72, 27);
-}
-.feedback .ajaxForm .checkbox_label{
-    font-size: 12px;
+    color: rgb(236, 76, 17);
 }
 .feedback .ajaxForm .checkbox_input{
     width: 30px;
@@ -623,14 +781,72 @@ html{
     font-weight: 500;
 
     margin-top: 10px;
+
+    transition: all 0.3s ease;
 }
 .feedback .ajaxForm button:hover{
     background-color: transparent;
 }
 
+.checkbox{
+    position: relative;
+    margin-bottom: 5px;
+}
+.checkbox_input{
+    appearance: none;
+    position: absolute;
+}
+.checkbox_label{
+    padding-left: 35px;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+.checkbox_label::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid rgb(146, 138, 138);
+    border-radius: 5px;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    transition: all 0.2s ease;
+}
+.checkbox_label::after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background: url("../img/checkbox-icon.png") no-repeat;
+    background-size: 13px 13px;
+    opacity: 0;
+
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+
+    transition: all 0.3s ease;
+}
+.checkbox_input:checked + .checkbox_label::before{
+    border-color: orangered;
+    box-shadow: 0 0 10px orangered;
+
+}
+.checkbox_input:checked + .checkbox_label::after{
+    opacity: 1;
+}
 
 .wrapper-form hr{
-    border: 1px solid white;
+    border: 1px solid rgba(256,256,256,.3);
 }
 
 footer{
@@ -642,8 +858,24 @@ footer p{
 }
 footer .links{
     margin-bottom: 12px;
+    
+    display: flex;
 }
-
+footer .links .link{
+    width: 30px;
+    text-align: center;
+    margin-right: 15px;
+    
+    background-color: orangered;
+    border-radius: 5px;
+    border: 2px solid orangered;
+}
+footer .links .pic{
+    width: 18px;
+}
+footer .links a{
+    background-color: transparent;
+}
 
 /* feedback and links styles end */
 
@@ -656,6 +888,10 @@ footer .links{
 
     /* nav-introduct styles start */
     
+    .mobile-menu{
+        display: none;
+    }
+
     .wrapper-nav-introduct{
         padding-bottom: 70px;
     }
@@ -837,21 +1073,42 @@ footer .links{
     .cases p{
         font-size: 14px;
     }
+    .cases .content{
+        bottom: 40px;
+        left: 40px;
+        right: 40px;
+    }
+    
     /* cases styles end */
  
 
     /* FAQ styles start */
 
+    .faq{
+        padding: 120px 0px 60px;
+    }
     .faq h2{
         font-size: 42px;
 
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
 
     /* FAQ styles end */
 
 
     /* feedback and links styles start */
+
+    .wrapper-form .pic1{
+        width: 290px;
+        margin-left: -155px;
+    }
+    .wrapper-form .pic2{
+        width: 467px;
+    }
+    .feedback .ajaxForm{
+        padding-left: 70px;
+        margin-top: 0px;
+    }
 
     .feedback h2{
         font-size: 42px;
