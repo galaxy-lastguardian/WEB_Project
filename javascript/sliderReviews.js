@@ -18,4 +18,3 @@ $(document).ready(function(){
         $('.current-slide').text('0' + (currentSlide + 1) + ' ');
     })
 });
-

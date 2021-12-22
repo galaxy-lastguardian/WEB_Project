@@ -7,8 +7,8 @@ class LastInfoPerson {
 }
 
 $(document).ready(function () {
-    if (localStorage.getItem('lastInfoPerson') != null) {
-        let data = localStorage.getItem('lastInfoPerson');
+    if (localStorage.getItem("lastInfoPerson") != null) {
+        let data = localStorage.getItem("lastInfoPerson");
         let info = JSON.parse(data);
 
         document.form.name.value = info.na;
@@ -18,8 +18,8 @@ $(document).ready(function () {
     }
 });
 
-$(function(){
-    $(".ajaxForm").submit(function(e){
+$(function() {
+    $(".ajaxForm").submit(function (e) {
         e.preventDefault();
         var href = $(this).attr("action");
         $.ajax({
@@ -27,10 +27,10 @@ $(function(){
             dataType: "json",
             url: href,
             data: $(this).serialize(),
-            success: function(response){
-                if(response.status === "success"){
+            success: function (response) {
+                if (response.status === "success") {
                     alert("Мы приняли вашу заявку, спасибо!");
-                }else{
+                } else {
                     alert("Произошла ошибка: " + response.message);
                 }
             }
@@ -43,7 +43,7 @@ $(function(){
 
         let lip = new LastInfoPerson(fNa, fPh, fEm);
 
-        localStorage.setItem('lastInfoPerson', JSON.stringify(lip));
+        localStorage.setItem("lastInfoPerson", JSON.stringify(lip));
 
         document.form.comment.value = "";
         document.form.checkbox.value = false;
