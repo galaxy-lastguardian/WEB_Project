@@ -442,13 +442,14 @@ html{
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
-:is(.tarif1:hover, .tarif2:hover, .tarif3:hover) button{
+/* :is(.tarif1:hover, .tarif2:hover, .tarif3:hover) button{
     background-color: orangered;
     color:white;
-}
-:is(.tarif1:hover, .tarif2:hover, .tarif3:hover){
+} */
+/* :is(.tarif1:hover, .tarif2:hover, .tarif3:hover){
     background-color: white;
-}
+} */
+
 @media (min-width:768px) {
     .tarif1:hover, .tarif2:hover, .tarif3:hover{
         transform: scale(1.1);
