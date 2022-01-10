@@ -1,0 +1,1143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+/*presets*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    font-family:'Montserrat';
+    font-size:inherit;
+    font-style:inherit;
+}
+
+
+    /*styles for mobile*/
+
+
+/* nav-introduct styles start */
+
+/* navigation-mobile */
+.mobile-menu{
+    background-color: rgb(3, 6, 12);
+    border-top: 2px solid rgb(161, 157, 157);
+
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.mobile-menu .menu-logo-pic{
+    height: 22px;
+}
+.mobile-menu .logo{
+    margin-left: 10px;
+}
+.mobile-menu .opt{
+    width: 25px;
+}
+.mobile-menu #toggle{
+    appearance: none;
+}
+.mobile-menu #toggle:checked ~ .dropdown-div{
+    opacity: 1;
+    height: 620px;
+    pointer-events:visible;
+}
+.mobile-menu .dropdown-div{
+    opacity: 0;
+    height: 0px;
+    position: fixed;
+    z-index: 100;
+    bottom: 46px;
+
+    width: 100%;
+
+    background-color: rgb(3, 6, 12);
+
+    pointer-events:none;
+    transition: all 0.4s;
+}
+.mobile-menu .dropdown-div a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.mobile-menu .dropdown-div a:hover{
+    color: orangered;
+}
+.mobile-menu .nav-link{
+    border-top: 1px solid rgba(256,256,256,.3);
+}
+.mobile-menu .m{
+    padding-left: 34px;
+}
+
+/* navigation */
+.wrapper-nav-introduct{
+    background-color: rgb(3, 6, 12);
+    padding-bottom: 35px;
+    padding-top: 1px;
+    position: relative;
+}
+.wrapper-nav-introduct .video{
+    height: 100%;
+    width: 100%;
+    filter: brightness(25%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.wrapper-nav-introduct .video_media{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.wrapper-nav{
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+/*изменение стилей поверх бутстрапа*/
+@media all and (min-width: 768px) {
+    .navbar .nav-item{
+        padding: 0 1rem;
+    }
+    .navbar .nav-item .nav-link{
+        padding: 0;
+    }
+    .navbar .nav-item .nav-link{
+        border-bottom: 3px solid #f04e3500;
+    }
+    .navbar .nav-item .nav-link:hover{
+        border-bottom: 3px solid #f04d35;
+    }
+	.navbar .nav-item .dropdown-menu{
+        display: block;
+        height: 0;
+        opacity: 0;
+        margin-top:0;
+        border-radius: 0;
+        background-color: #f04d35;
+
+        overflow: hidden;
+        position: absolute;
+        top:17px;
+        left:14px;
+
+        pointer-events:none;
+
+        transition: all 0.3s;
+    }
+	.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+        background-color: #d13018;
+    }
+	.navbar .nav-item:hover .dropdown-menu{
+        height: 150px;
+        opacity: 1;
+        pointer-events:visible;
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item{
+        padding: 0;
+        color:white;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item .nav-link{
+        padding:3px 20px;
+    }
+    .nav-link:hover, .nav-link:focus{
+        color: white !important;
+    }
+}	
+
+/* introductory */
+.wrapper-introduct{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+.introduct h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.introduct .item1{
+    margin-bottom: 20px;
+}
+.introduct .item2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.introduct .item3{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.introduct button{
+    font-size: 12px;
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    outline: none;
+    background-color: transparent;
+    color: white;
+
+    transition: all 0.3s ease;
+}
+.introduct button:hover{
+    background-color: orangered;
+}
+.introduct p{
+    opacity: 0.8;
+}
+.introduct h3{
+    font-size: 23px;
+    font-weight: bold;
+}
+.introduct span{
+    font-size: 45px;
+    font-weight: bold;
+}
+.introduct .item{
+    border-left: 3px solid orangered;
+    margin-top: 25px;
+}
+.introduct .block{
+    margin-left: 7px;
+}
+.introduct .cup-block{
+    position: relative;
+}
+.introduct .img-cup{
+    position: absolute;
+    top: -30px;
+    left: 60px;
+}
+.introduct .img-cup-header{
+    position: absolute;
+    top: -24px;
+}
+.introduct .h3-to-hide{
+    opacity: 0;
+}
+.introduct .block p{
+    line-height: 15px;
+}
+.introduct .item > p{
+    font-size: 13px;
+}
+
+/* nav-introduct styles end */
+
+
+/* competensions styles start */
+
+.competensions{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    line-height: 23px;
+    font-weight: 500px;
+}
+.competensions h2{
+    font-size: 23px;
+    font-weight: bold;
+}
+.competensions p{
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 14px;
+}
+.competensions > p{
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+.competensions .row {
+    font-size: 16px;
+}
+.competensions .competension{
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 200px;
+    background-image: url(./img/competensions-icon-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* competensions styles end */
+
+
+/* support styles start */
+
+.wrapper-support{
+    background-image: url(./img/support-bg-mobile.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 18px;
+    line-height: 23px;
+    position: relative;
+    font-weight: 500;
+}
+.support h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.support h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.support p{
+    opacity: 0.9;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+.support .item{
+    border-left: 3px solid orangered;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+.support .block2{
+    margin-left: 0px;
+}
+.ekspertiza p{
+    opacity: 0.7;
+}
+.ekspertiza span{
+    color: orangered;
+}
+.support .elem{
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(233, 227, 227, 0.5);
+    position: relative;
+}
+.support .block1{
+    padding: 15px;
+}
+.support .digit{
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.support .support-pic{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+.support .ekspertiza{
+    color: white;
+}
+.ekspertiza h2{
+    margin-bottom: 20px;
+}
+.ekspertiza .item{
+    padding-left: 15px;
+}
+.support .laptop{
+    width: 320px;
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+}
+.support .empty-space{
+    height: 320px;
+    opacity: 0;
+}
+
+/* support styles end */
+
+
+/* tarifs styles start rgb(233, 205, 157);*/
+
+.wrapper-tarifs{
+    padding-bottom: 45px;
+
+    background-image: url(./img/tarifs-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 1800px;
+}
+.tarifs{
+    padding-top: 95px;
+    font-weight: 500;
+}
+.tarifs .orange{
+    color: orangered;
+    font-size: 22px;
+    font-weight: bold;
+}
+.tarifs ul{
+    padding: 0;
+    margin-left: 20px;
+}
+.tarifs li{
+    list-style-image: url(./img/tarifs-galka.png);
+    margin-bottom: 10px;
+    opacity: 0.9;
+    font-size: 14px;
+}
+.tarifs button{
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: 1.5px solid orangered;
+    outline: none;
+    background-color: transparent;
+    color: orangered;
+    margin-top: 30px;
+}
+.tarifs p{
+    opacity: 0.5;
+}
+.tarifs a{
+    color: black;
+    font-size: 12px;
+}
+.tarifs a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+.tarifs hr{
+    border: 1px solid black;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.tarifs .row > h2{
+    font-weight: bold;
+}
+.tarifs .row{
+    padding: 15px;
+}
+.tarif1, .tarif2, .tarif3{
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(201, 190, 190);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 30px 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+/* :is(.tarif1:hover, .tarif2:hover, .tarif3:hover) button{
+    background-color: orangered;
+    color:white;
+} */
+/* :is(.tarif1:hover, .tarif2:hover, .tarif3:hover){
+    background-color: white;
+} */
+
+@media (min-width:768px) {
+    .tarif1:hover, .tarif2:hover, .tarif3:hover{
+        transform: scale(1.1);
+    }   
+}
+
+/* tarifs styles end */
+
+
+/* task-time styles start */
+
+.task-time{
+    padding-top: 45px;
+    font-weight: 500;
+}
+.task-time p{
+    opacity: 0.9;
+    font-size: 14px;
+}
+.task-time h1, .task-time h2{
+    font-weight: bold;
+}
+.task-time h1{
+    text-align: center;
+    font-size: 30px;
+}
+.task-time h2{
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+.task-time .pic{
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 200px;
+
+    background-image: url(./img/competensions-icon-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.task-time .row > div{
+    width: 230px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+/* task-time styles end */
+
+
+/* team styles start */
+
+.team{
+    padding: 45px 16px;
+}
+.team h2{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.team h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.team p{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.team .pic{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.team row{
+    width: 100%;
+}
+.team .item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.team button{
+    font-size: 12px;
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 190, 190);
+    outline: none;
+    background-color: white;
+    font-weight: 500;
+}
+
+/* team styles end */
+
+
+/* cases styles start */
+
+.cases{
+    padding: 15px;
+    font-weight: 500;
+}
+.cases h2{
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+.cases .pic{
+    height: 180px;
+    background-image: url(./img/cases.jpg);
+    border-radius: 5px;
+}
+.cases p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.cases .elem{
+    position: relative;
+    height: 280px;
+    color: white;
+    background-image: url(./img/cases.jpg);
+    border-radius: 5px;
+}
+.cases .content{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+}
+.cases .item .pic{
+    margin-bottom: 15px;
+}
+.cases .item .p{
+    padding: 0px 10px;
+}
+.cases .item .p p{
+    margin-top: 5px;
+}
+.cases .data{
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+.cases h4{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.cases a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.cases .item .data{
+    margin-bottom: 20px;
+}
+
+/* cases styles end */
+
+
+/* FAQ styles start */
+
+.faq{
+    font-weight: 550;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-top: 65px;
+}
+.faq ol{
+    color: #828a9b;
+    font-size: 12px;
+}
+.faq li{
+    margin-bottom: 25px;
+}
+.faq h2{
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+.faq h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.faq .orange{
+    padding: 10px 12px 10px 32px;
+    margin-bottom: 10px;
+    position: relative;
+
+    border: 3px solid orangered;
+}
+.faq .orange::before{
+    content: "1.";
+    color: #828a9b;
+    font-size: 12px;
+
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+.faq .orange h4{
+    color: orangered;
+}
+.faq .orange p{
+    color: #4E5A73;
+    font-size: 16px;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+/* FAQ styles end */
+
+
+/* feedback and links styles start */
+
+.wrapper-form{
+    color: white;
+    font-weight: 500;
+
+    background-color: #040613;
+    position: relative;
+
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+.wrapper-form .pic1{
+    position: absolute;
+    width: 160px;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    margin-left: -80px;
+}
+.wrapper-form .pic2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 200px;
+}
+
+.feedback, footer{
+    padding: 0px 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.feedback{
+    padding-bottom: 60px;
+}
+.feedback .email a{
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+.feedback .email a:hover{
+    color: white;
+}
+.feedback h2{
+    font-size: 23px;
+    font-weight: 700;
+}
+.feedback h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.feedback p{
+    font-size: 14px;
+    opacity: 0.7;
+
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.feedback .icon{
+    margin-right: 10px;
+    width: 23px;
+}
+
+.feedback .ajaxForm{
+    margin-top: 30px;
+}
+.feedback textarea{
+    height: 150px;
+}
+.feedback .form_input{
+    background: transparent;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgba(256,256,256,.3);
+    border-radius: 5px;
+
+    padding: 18px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+
+    transition: all 0.2s ease;
+}
+.feedback .form_input:focus-visible{
+    border-color: orangered;
+    box-shadow: 0 0 10px orangered;
+}
+.feedback .form_input::placeholder{
+    color: white;
+}
+.feedback .ajaxForm a{
+    text-decoration: none;
+    color: rgb(236, 76, 17);
+    font-size: 12px;
+}
+.feedback .ajaxForm span{
+    color: rgb(236, 76, 17);
+}
+.feedback .ajaxForm .checkbox_input{
+    width: 30px;
+}
+.feedback .ajaxForm button{
+    font-size: 12px;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+
+    margin-top: 10px;
+
+    transition: all 0.3s ease;
+}
+.feedback .ajaxForm button:hover{
+    background-color: transparent;
+}
+
+.checkbox{
+    position: relative;
+    margin-bottom: 5px;
+}
+.checkbox_input{
+    appearance: none;
+    position: absolute;
+}
+.checkbox_label{
+    padding-left: 35px;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+.checkbox_label::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid rgb(146, 138, 138);
+    border-radius: 5px;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    transition: all 0.2s ease;
+}
+.checkbox_label::after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background: url("./img/checkbox-icon.png") no-repeat;
+    background-size: 13px 13px;
+    opacity: 0;
+
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+
+    transition: all 0.3s ease;
+}
+.checkbox_input:checked + .checkbox_label::before{
+    border-color: orangered;
+    box-shadow: 0 0 10px orangered;
+
+}
+.checkbox_input:checked + .checkbox_label::after{
+    opacity: 1;
+}
+
+.wrapper-form hr{
+    border: 1px solid rgba(256,256,256,.3);
+}
+
+footer{
+    padding-top: 30px;
+}
+footer p{
+    font-weight: 400;
+    margin: 0;
+}
+footer .links{
+    margin-bottom: 12px;
+    
+    display: flex;
+}
+footer .links .link{
+    width: 30px;
+    text-align: center;
+    margin-right: 15px;
+    
+    background-color: orangered;
+    border-radius: 5px;
+    border: 2px solid orangered;
+}
+footer .links .pic{
+    width: 18px;
+}
+footer .links a{
+    background-color: transparent;
+}
+
+/* feedback and links styles end */
+
+
+    /*styles for desktop*/
+
+@media screen and (min-width: 767px) {
+    
+    
+
+    /* nav-introduct styles start */
+    
+    .mobile-menu{
+        display: none;
+    }
+
+    .wrapper-nav-introduct{
+        padding-bottom: 70px;
+    }
+    .wrapper-nav{
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 20px;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-list li {
+        list-style-type: none;
+    }
+    .nav-list a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .nav-list a:visited{
+        text-decoration: none;
+        color: inherit;
+    }
+    .navbar span{
+        font-size: 8px;
+    }
+
+    .introduct h2{
+        font-size: 52px;
+    }
+    .introduct .item2{
+        font-size: 18px;
+    }
+    .introduct .item{
+        margin-top: 75px;
+    }
+
+    /* nav-introduct styles end */
+
+
+    /* competensions styles start */
+
+    .competensions{
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    .competensions h2{
+        font-size: 42px;
+    }
+    .competensions p{
+        font-size: 16px;
+    }
+
+    /* competensions styles end */
+
+
+    /* support styles start */
+
+    .wrapper-support{
+        background-image: url(./img/support-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .support h2{
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+    .support .elem{
+        max-width: 315px;
+        margin-right: 5px;
+        height: 315px;
+    }
+    .support .laptop{
+        width: 500px;
+        left: 0px;
+        bottom: -80px;
+    }
+    .support .empty-space{
+        height: 210px;
+    }
+    .support .block2{
+        margin-bottom: 150px;
+    }
+
+    /* support styles end */
+
+
+    /* tarifs styles start */
+    .wrapper-tarifs{
+        padding-bottom: 100px;
+    
+        background-size: 1100px;
+    }
+    .tarifs h2{
+        font-size: 42px;
+    }
+    .tarifs li{
+        font-size: 17px;
+    }
+
+    /* tarifs tarifs styles end */
+
+
+    /* task-time styles start */
+
+    .task-time{
+        padding-top: 170px;
+    }
+    .task-time .row > div{
+        margin-left: 0px;
+    }
+    .task-time h1{
+        text-align: justify;
+    }
+    .task-time h2{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .task-time p{
+        font-size: 16px;
+    }
+
+    /* task-time styles end */
+
+
+    /* team styles start */
+    .team{
+        padding-top: 150px;
+    }
+    .team h2{
+        font-size: 42px;
+    }
+    .team p{
+        font-size: 16px;
+    }
+    .team .item{
+        padding-left: 75px;
+        padding-right: 75px;
+        margin-top: 65px;
+    }
+    .team button{
+        width: 250px;
+        height: 60px;
+        margin-top: 40px;
+    }
+
+    /* team styles end */
+
+
+    /* cases styles start */
+    .cases .elem{
+        height: 430px;
+    }
+    .cases h2{
+        font-size: 42px;
+
+        margin-bottom: 40px;
+    }
+    .cases h4{
+        font-size: 18px;
+    }
+    .cases .pic{
+        height: 180px;
+    }
+    .cases .item .p{
+        padding-top: 30px;
+    }
+    .cases p{
+        font-size: 14px;
+    }
+    .cases .content{
+        bottom: 40px;
+        left: 40px;
+        right: 40px;
+    }
+    
+    /* cases styles end */
+ 
+
+    /* FAQ styles start */
+
+    .faq{
+        padding: 120px 0px 60px;
+    }
+    .faq h2{
+        font-size: 42px;
+
+        margin-bottom: 80px;
+    }
+
+    /* FAQ styles end */
+
+
+    /* feedback and links styles start */
+
+    .wrapper-form .pic1{
+        width: 290px;
+        margin-left: -155px;
+    }
+    .wrapper-form .pic2{
+        width: 467px;
+    }
+    .feedback .ajaxForm{
+        padding-left: 70px;
+        margin-top: 0px;
+    }
+
+    .feedback h2{
+        font-size: 42px;
+    }
+    .feedback .elem{
+        margin-top: 220px;
+    }
+
+    /* feedback and links styles end */
+}
+
+@media screen and (min-width: 1240px) {
+    /* support styles start */
+
+    .support .laptop{
+        width: 730px;
+        left: 0px;
+        bottom: -115px;
+    }
+    .support .empty-space{
+        height: 220px;
+    }
+    .support .block2{
+        margin-bottom: 150px;
+    }
+
+    /* support styles end */
+
+    .tarifs{
+        padding-top: 150px;
+    }
+}
