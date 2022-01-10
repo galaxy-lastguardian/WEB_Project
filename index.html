@@ -13,6 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="styles/styleSlider.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/popup.css"/>
     </head>
     <body>
         <div class="mobile-menu">
@@ -383,6 +384,7 @@
         <div class="wrapper-tarifs">
             <div class="container">
                 <div class="tarifs" id="tarifs">
+                    <div id = "popupPlace"></div>
                     <div class="row text-center">
                         <h2>Тарифы</h2>
                     </div>
@@ -398,7 +400,7 @@
                                     <li>Предоплата от 6000 рублей в месяц</li>
                                 </ul>
                                 <div class="col-12 text-center">
-                                    <button class="contact-button" onClick='location.href="#form"'>
+                                    <button class="contact-button" id = "#popup-vue">
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -416,9 +418,9 @@
                                     <li>Предоплата от 30000 рублей в месяц</li>
                                 </ul>
                                 <div class="col-12 text-center">
-                                    <button class="contact-button" onClick='location.href="#form"'>
-                                        СВЯЖИТЕСЬ С НАМИ!
-                                    </button>     
+                                    <div id="root">
+
+                                    </div>     
                                 </div>
                             </div>
                         </div>
@@ -434,7 +436,7 @@
                                     <li>Предоплата от 270000 в месяц</li>
                                 </ul>
                                 <div class="col-12 text-center">
-                                    <button class="contact-button" onClick='location.href="#form"'>
+                                    <button class="contact-button" id = "#popup-vue">
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -864,6 +866,10 @@
         <script src="javascript/jquery-3.4.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="slick/slick.min.js"></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="javascript/popup.js"></script>
+        <!-- <script src="popup/App.jsx"></script> -->
         <script src="javascript/form.js"></script>
         <script src="javascript/sliderReviews.js"></script>
         <script src="javascript/sliderCollegues.js"></script>
