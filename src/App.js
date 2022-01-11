@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useState} from 'react';
 import Modal from "./popup_form";
 import './javascript/sliderCollegues';
@@ -6,88 +6,87 @@ import './javascript/sliderReviews';
 import './javascript/form';
 import './App.css';
 import './styleSlider.css';
-// IMAGES ***************************
-
-import cableman_ru from "./img/cableman_ru.png"
-import cases from "./img/cases.jpg"
-import checkboxIcon from "./img/checkbox-icon.png"
-import company1 from "./img/company-1.png"
-import company2 from "./img/company-2.png"
-import company3 from "./img/company-3.png"
-import company4 from "./img/company-4.png"
-import company5 from "./img/company-5.png"
-import company6 from "./img/company-6.png"
-import company7 from "./img/company-7.png"
-import company8 from "./img/company-8.png"
-import company9 from "./img/company-9.png"
-import company10 from "./img/company-10.png"
-import company11 from "./img/company-11.png"
-import company12 from "./img/company-12.png"
-import company13 from "./img/company-13.png"
-import company14 from "./img/company-14.png"
-import company15 from "./img/company-15.png"
-import company16 from "./img/company-16.png"
-import competency1 from "./img/competency-1.svg"
-import competency2 from "./img/competency-2.svg"
-import competency3 from "./img/competency-3.svg"
-import competency4 from "./img/competency-4.svg"
-import competency5 from "./img/competency-5.svg"
-import competency6 from "./img/competency-6.svg"
-import competency7 from "./img/competency-7.svg"
-import competency8 from "./img/competency-8.svg"
-// import competency20 from "./img/competency-20.svg"
-// import competency21 from "./img/competency-21.svg"
-// import competency22 from "./img/competency-22.svg"
-import competensionsIconBG from "./img/competensions-icon-bg.svg"
-import cup from "./img/cup.png"
-// import drupalCoder from "./img/drupal-coder.svg"
-import facebook from "./img/facebook.png"
-import farbors_ru from "./img/farbors_ru.jpg"
-import feedbackIcon1 from "./img/feedback-icon1.png"
-import feedbackIcon2 from "./img/feedback-icon2.png"
-import footerPic1 from "./img/footer-pic1.svg"
-import footerPic2 from "./img/footer-pic2.png"
-import sinitca from "./img/IMG_2472_0.jpg"
-import man1 from "./img/IMG_2474_1.jpg"
-import man2 from "./img/IMG_2539_0.jpg"
-import girl1 from "./img/IMG_2522_0.jpg"
-import girl2 from "./img/IMG_9971_16.jpg"
-import intoductBG from "./img/itroduct-bg.png"
-import laptop from "./img/laptop.png"
-import logo from "./img/logo.png"
-import logo0 from "./img/logo_0.png"
-import logo2 from "./img/logo_2.png"
-import logoEstee from "./img/logo-estee.png"
-import lpcmaRusV4 from "./img/lpcma_rus_v4.jpg"
-import nashagazetaCH from "./img/nashagazeta_ch.png"
-import navLogo from "./img/nav-logo.png"
-import opt from "./img/opt.png"
-import reviewsBG from "./img/reviews-bg.svg"
-import support1 from "./img/support1.svg"
-import support2 from "./img/support2.svg"
-import support3 from "./img/support3.svg"
-// import support4 from "./img/support4.svg"
-import support5 from "./img/support5.svg"
-import support6 from "./img/support6.svg"
-import support7 from "./img/support7.svg"
-import support8 from "./img/support8.svg"
-import supportBG from "./img/support-bg.jpg"
-import supportBgMobile from "./img/support-bg-mobile.jpeg"
-import tarifsBG from "./img/tarifs-bg.png"
-import tarifsGalka from "./img/tarifs-galka.png"
-import telegram from "./img/telegram.png"
-import video from "./img/video.mp4"
-import vk from "./img/vk.png"
-import youtube from "./img/youtube.png"
+import { Route, useHistory} from "react-router-dom";
 
 // IMAGES ***************************
+import cableman_ru from "./img/cableman_ru.png";
+import company1 from "./img/company-1.png";
+import company2 from "./img/company-2.png";
+import company3 from "./img/company-3.png";
+import company4 from "./img/company-4.png";
+import company5 from "./img/company-5.png";
+import company6 from "./img/company-6.png";
+import company7 from "./img/company-7.png";
+import company8 from "./img/company-8.png";
+import company9 from "./img/company-9.png";
+import company10 from "./img/company-10.png";
+import company11 from "./img/company-11.png";
+import company12 from "./img/company-12.png";
+import company13 from "./img/company-13.png";
+import company14 from "./img/company-14.png";
+import company15 from "./img/company-15.png";
+import company16 from "./img/company-16.png";
+import competency1 from "./img/competency-1.svg";
+import competency2 from "./img/competency-2.svg";
+import competency3 from "./img/competency-3.svg";
+import competency4 from "./img/competency-4.svg";
+import competency5 from "./img/competency-5.svg";
+import competency6 from "./img/competency-6.svg";
+import competency7 from "./img/competency-7.svg";
+import competency8 from "./img/competency-8.svg";
+import competency20 from "./img/competency-20.svg";
+import competency21 from "./img/competency-21.svg";
+import competency22 from "./img/competency-22.svg";
+import cup from "./img/cup.png";
+import facebook from "./img/facebook.png";
+import farbors_ru from "./img/farbors_ru.jpg";
+import feedbackIcon1 from "./img/feedback-icon1.png";
+import feedbackIcon2 from "./img/feedback-icon2.png";
+import footerPic1 from "./img/footer-pic1.svg";
+import footerPic2 from "./img/footer-pic2.png";
+import sinitca from "./img/IMG_2472_0.jpg";
+import man1 from "./img/IMG_2474_1.jpg";
+import man2 from "./img/IMG_2539_0.jpg";
+import girl1 from "./img/IMG_2522_0.jpg";
+import girl2 from "./img/IMG_9971_16.jpg";
+import laptop from "./img/laptop.png";
+import logo from "./img/logo.png";
+import logo0 from "./img/logo_0.png";
+import logo2 from "./img/logo_2.png";
+import logoEstee from "./img/logo-estee.png";
+import lpcmaRusV4 from "./img/lpcma_rus_v4.jpg";
+import nashagazetaCH from "./img/nashagazeta_ch.png";
+import navLogo from "./img/nav-logo.png";
+import opt from "./img/opt.png";
+import support1 from "./img/support1.svg";
+import support2 from "./img/support2.svg";
+import support3 from "./img/support3.svg";
+import support4 from "./img/support4.svg";
+import support5 from "./img/support5.svg";
+import support6 from "./img/support6.svg";
+import support7 from "./img/support7.svg";
+import support8 from "./img/support8.svg";
+import telegram from "./img/telegram.png";
+import video from "./img/video.mp4";
+import vk from "./img/vk.png";
+import youtube from "./img/youtube.png";
+// IMAGES ***************************
+
 const App = () => {
     const [modalActive, setModalActive] = useState(false);
+    const history = useHistory();
+    const handleHistory = () => {
+        setModalActive(true);
+        history.push("/modal_form");
+    }
+    // useEffect(() => {
+    //     history.push("/");
+    // }, [])
     return (
         <div className='app'>
             <div className="mobile-menu">
             <div className="logo">
-                <a href="" className="menu-logo-link">
+                <a href="https://drupal-coder.ru" className="menu-logo-link">
                     <img src={navLogo} alt="logo" className="menu-logo-pic"/>
                 </a>
             </div>
@@ -97,23 +96,23 @@ const App = () => {
             </label>
 
             <div className="dropdown-div">
-                <a href="#" className="nav-link">поддержка drupal</a>
-                <a href="#" className="nav-link dropdown-toggle">администрирование</a>
-                <a href="#" className="nav-link m">миграция</a>
-                <a href="#" className="nav-link m">бэкапы</a>
-                <a href = "#" className = "nav-link m">аудит безопасности</a>
-                <a href = "#" className = "nav-link m">оптимизация скорости</a>
-                <a href = "#" className = "nav-link m">переезд на https</a>
-                <a href="#" className="nav-link">продвижение</a>
-                <a href="#" className="nav-link">реклама</a>
-                <a href="#" className="nav-link dropdown-toggle">о нас</a>
-                <a href = "#" className = "nav-link m">команда</a>
-                <a href = "#" className = "nav-link m">drupalgive</a>
-                <a href = "#" className = "nav-link m">блог</a>
-                <a href = "#" className = "nav-link m">курсы drupal</a>
-                <a href = "#" className = "nav-link m">вакансии</a>
-                <a href="#" className="nav-link">проекты</a>
-                <a href="#" className="nav-link">контакты</a>
+                <a href="https://drupal-coder.ru" className="nav-link">поддержка drupal</a>
+                <a href="https://drupal-coder.ru" className="nav-link dropdown-toggle">администрирование</a>
+                <a href="https://drupal-coder.ru" className="nav-link m">миграция</a>
+                <a href="https://drupal-coder.ru" className="nav-link m">бэкапы</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">аудит безопасности</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">оптимизация скорости</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">переезд на https</a>
+                <a href="https://drupal-coder.ru" className="nav-link">продвижение</a>
+                <a href="https://drupal-coder.ru" className="nav-link">реклама</a>
+                <a href="https://drupal-coder.ru" className="nav-link dropdown-toggle">о нас</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">команда</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">drupalgive</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">блог</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">курсы drupal</a>
+                <a href = "https://drupal-coder.ru" className = "nav-link m">вакансии</a>
+                <a href="https://drupal-coder.ru" className="nav-link">проекты</a>
+                <a href="https://drupal-coder.ru" className="nav-link">контакты</a>
             </div>
 
         </div>
@@ -126,67 +125,67 @@ const App = () => {
                 <div className="container">
                     <div className="navbar">
                         <div className="navbar-logo">
-                            <a href="" className="nav-logo-link">
-                                <img src={navLogo} className="nav-logo-pic"/>
+                            <a href="https://drupal-coder.ru" className="nav-logo-link">
+                                <img src={navLogo} alt="navLogo" className="nav-logo-pic"/>
                             </a>
                         </div>
                         <nav>
                             <div className="content" id ="info-nav">
                                 <ul className="nav-list">
                                     <li className = "nav-item">
-                                        <a href="#" className="nav-link">поддержка drupal</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link">поддержка drupal</a>
                                     </li>
                                     <li className = "nav-item dropdown">
-                                        <a href="#" className="nav-link dropdown-toggle" id="dropdownMenu1Link" data-bs-toggle="dropdown" aria-expanded="false">администрирование</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link dropdown-toggle" id="dropdownMenu1Link" data-bs-toggle="dropdown" aria-expanded="false">администрирование</a>
                                         <ul className = "dropdown-menu" aria-labelledby="dropdownMenu1Link">
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">миграция</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">миграция</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">бэкапы</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">бэкапы</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">аудит безопасности</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">аудит безопасности</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">оптимизация скорости</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">оптимизация скорости</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">переезд на https</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">переезд на https</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className = "nav-item">
-                                        <a href="#" className="nav-link">продвижение</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link">продвижение</a>
                                     </li>
                                     <li className = "nav-item">
-                                        <a href="#" className="nav-link">реклама</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link">реклама</a>
                                     </li>
                                     <li className = "nav-item dropdown">
-                                        <a href="#" className="nav-link dropdown-toggle" id="dropdownMenu2Link" data-bs-toggle="dropdown" aria-expanded="false">о наc</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link dropdown-toggle" id="dropdownMenu2Link" data-bs-toggle="dropdown" aria-expanded="false">о наc</a>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenu2Link">
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">команда</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">команда</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">drupalgive</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">drupalgive</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">блог</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">блог</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">курсы drupal</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">курсы drupal</a>
                                             </li>
                                             <li className = "dropdown-item">
-                                                <a href = "#" className = "nav-link">вакансии</a>
+                                                <a href = "https://drupal-coder.ru" className = "nav-link">вакансии</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className = "nav-item">
-                                        <a href="#" className="nav-link">проекты</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link">проекты</a>
                                     </li>
                                     <li className = "nav-item">
-                                        <a href="#" className="nav-link">контакты</a>
+                                        <a href="https://drupal-coder.ru" className="nav-link">контакты</a>
                                     </li>
                                 </ul>
                             </div>
@@ -218,13 +217,12 @@ const App = () => {
                             <div className="col-12 col-lg-6 mt-5">
                                 <div className="row block gy-5">
                                     <div className="col-6 col-md-4 item">
-                                        <div className = "cup-block">
+                                        <div className="cup-block">
                                             <span className = "img-cup-header">#1</span>
                                             <img src={cup} alt="cup" className="img-cup"/>
                                         </div>
-                                        <h3 className = "h3-to-hide">  
-                                            {/* <!-- этот заголовок необходим чтобы сохранить форматирование как в след. примерах, но спрятать, т.к. основной блок - предыдущий -->
-                                            ... */}
+                                        <h3 className = "h3-to-hide">...  
+                                            {/* <!-- этот заголовок необходим чтобы сохранить форматирование как в след. примерах, но спрятать, т.к. основной блок - предыдущий -->*/}
                                         </h3>
                                         <p>Drupal-разработчик <br/> в России по версии <br/> Рейтинга Рунета</p>
                                     </div>
@@ -372,8 +370,7 @@ const App = () => {
                                 <h3>Персональный менеджер проекта</h3>
                                 <p>Ваш менеджер всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
                                 <div className="support-pic">
-                                    <img src="" alt="pic"/>
-                                    {/* support4 */}
+                                    <img src={support4} alt="pic"/>
                                 </div>
                             </div>
                         </div>
@@ -471,7 +468,7 @@ const App = () => {
                                     <li>Предоплата от 6000 рублей в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)}>
+                                    <button className="contact-button" onClick={handleHistory}>
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -489,7 +486,7 @@ const App = () => {
                                     <li>Предоплата от 30000 рублей в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)}>
+                                    <button className="contact-button" onClick={handleHistory}>
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>
                                 </div>
@@ -507,7 +504,7 @@ const App = () => {
                                     <li>Предоплата от 270000 в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)} >
+                                    <button className="contact-button" onClick={handleHistory}>
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -516,7 +513,7 @@ const App = () => {
                     </div>
                     <div className="text-center">
                         <p>Вам не подходят наши тарифы? Оставьте заявку и мы <br/> предложим вам индивидуальные условия!</p>
-                        <a href="#">ПОЛУЧИТЬ ИНДИВИДУАЛЬНЫЙ ТАРИФ</a>
+                        <a href="https://drupal-coder.ru">ПОЛУЧИТЬ ИНДИВИДУАЛЬНЫЙ ТАРИФ</a>
                     </div>
                 </div>
             </div>
@@ -528,24 +525,21 @@ const App = () => {
                     <div className="row">
                         <div className="col-12 col-md-4 centered">
                             <div className="pic">
-                                <img src="" alt="pic"/>
-                                {/* competency20 */}
+                                <img src={competency20} alt="pic"/>
                             </div>
                             <h1>oт 1ч</h1>
                             <p className="text">Настройка события GA <br/> в интернет-магазине</p>
                         </div>
                         <div className="col-12 col-md-4">
                             <div className="pic">
-                                <img src="" alt="pic"/>
-                                {/* competency21 */}
+                                <img src={competency21} alt="pic"/>
                             </div>
                             <h1>oт 20ч</h1>
                             <p>Разработка мобильной <br/> версии сайта</p>
                         </div>
                         <div className="col-12 col-md-4">
                             <div className="pic">
-                                <img src="" alt="pic"/>
-                                {/* competency22 */}
+                                <img src={competency22} alt="pic"/>
                             </div>
                             <h1>oт 8ч</h1>
                             <p>Интеграции <br/> модуля оплаты</p>
@@ -641,7 +635,7 @@ const App = () => {
                                 <div className="p">
                                     <h4>Обмен товарами и заказами интернет-магазинов на Drupal 7 c 1C:Предприятие, МойСклад, Класс365</h4>
                                     <p className="data">22.08.2019</p>
-                                    <p className="text">Опубликован <a href="#">релиз модуля...</a></p>
+                                    <p className="text">Опубликован <a href="https://drupal-coder.ru">релиз модуля...</a></p>
                                 </div>
                             </div>
                         </div>
@@ -871,7 +865,7 @@ const App = () => {
                                         </div>
                                         <div className="email">
                                             <img src={feedbackIcon2} alt="icon" className="icon"/>
-                                            <a href="">info@drupal-coder.ru</a>
+                                            <a href="https://drupal-coder.ru">info@drupal-coder.ru</a>
                                         </div>
                                     </div>
                                 </div>
@@ -884,7 +878,7 @@ const App = () => {
                                         <input type="text" placeholder="Ваше имя" name = "name" id="form-name" className="form_input" required/>
                                     </div>
                                     <div className="col-12">
-                                        <input type="number" placeholder="Телефон" name = "phone" id="form-phone" className="form_input _number" required/>
+                                        <input type="text" placeholder="Телефон" name = "phone" id="form-phone" className="form_input _number" required/>
                                     </div>
                                     <div className="col-12">
                                         <input type="email" placeholder="E-mail" name = "email" id="form-email" className="form_input _email" required/>
@@ -895,7 +889,7 @@ const App = () => {
                                     <div className="col-12">
                                         <div className="checkbox">
                                             <input type="checkbox" name = "checkbox" id="form-checkbox" className="checkbox_input" required/>
-                                            <label htmlFor="form-checkbox" className="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
+                                            <label htmlFor="form-checkbox" className="checkbox_label">Отправляя заявку, я даю согласие <a href="https://drupal-coder.ru">на обработку своих персональных данных</a>.<span>*</span></label>
                                         </div>
                                     </div>
                                     <div className="col-12">
@@ -912,22 +906,22 @@ const App = () => {
                 <footer>
                     <div className="links">
                         <div className="link">
-                            <a href="#" className="f">
+                            <a href="https://drupal-coder.ru" className="f">
                                 <img src={facebook} alt="pic" className="pic"/>
                             </a>
                         </div>
                         <div className="link">
-                            <a href="#" className="vk">
+                            <a href="https://drupal-coder.ru" className="vk">
                                 <img src={vk} alt="pic" className="pic"/>
                             </a>
                         </div>
                         <div className="link">
-                            <a href="#" className="tel">
+                            <a href="https://drupal-coder.ru" className="tel">
                                 <img src={telegram} alt="pic" className="pic"/>
                             </a>
                         </div>
                         <div className="link">
-                            <a href="#" className="y">
+                            <a href="https://drupal-coder.ru" className="y">
                                 <img src={youtube} alt="pic" className="pic"/>
                             </a>
                         </div>
@@ -936,7 +930,8 @@ const App = () => {
                 </footer>
             </div>
         </div>
-        <Modal active = {modalActive} setActive = {setModalActive}/>
+            <Route path={"/modal_form"} component={Modal}/>
+            <Modal active = {modalActive} setActive = {setModalActive}/>
         </div>
     );
 }

@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import '../slick/slick';
+import '../slick/slick.css';
+import '../styleSlider.css';
 
 var sliderCollegues = $(document).ready(function (){
     $('.collegues-slider-main').slick({

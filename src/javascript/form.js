@@ -48,6 +48,7 @@ $(function(){
         localStorage.setItem('lastInfoPerson', JSON.stringify(lip));
 
         document.form.comment.value = "";
+        document.form.checkbox.value = false;
         // -------____________------- //
     });
 });
