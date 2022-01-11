@@ -1,15 +1,11 @@
 import React from 'react';
 import "./popup.css"
-<<<<<<< HEAD
 // IMAGES ***************************
 import feedbackIcon1 from "./img/feedback-icon1.png";
 import feedbackIcon2 from "./img/feedback-icon2.png";
 import footerPic1 from "./img/footer-pic1.svg";
 import footerPic2 from "./img/footer-pic2.png";
 // IMAGES ***************************
-=======
-import Signup from "./javascript/Signup";
->>>>>>> 120c3d715a9018a60541010ed947ef11ef969a34
 
 const Modal = ({active, setActive}) => {
     return (
@@ -41,7 +37,6 @@ const Modal = ({active, setActive}) => {
                                 </div>
                             </div>
                             <div className="col-12 col-md-6">
-<<<<<<< HEAD
                                 <form className="ajaxForm" action="https://formcarry.com/s/46WaOUCdYYl" method="POST" acceptCharset="UTF-8" id="form" name="form">
                                     <div className="row">
                                         <div className="col-12">
@@ -67,9 +62,6 @@ const Modal = ({active, setActive}) => {
                                         </div>
                                     </div>
                                 </form>
-=======
-                                <Signup/>
->>>>>>> 120c3d715a9018a60541010ed947ef11ef969a34
                             </div>
                         </div>
                     </div>
@@ -78,3 +70,5 @@ const Modal = ({active, setActive}) => {
         </div>
     );
 }
+
+export default Modal;
