@@ -12,8 +12,12 @@
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+<<<<<<< HEAD
     "svg-loader": "^0.0.2",
+=======
+>>>>>>> 120c3d715a9018a60541010ed947ef11ef969a34
     "web-vitals": "^2.1.3",
     "yup": "^0.32.11"
   },
@@ -44,6 +48,10 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@svgr/webpack": "^6.2.0"
+=======
+    "@types/react-router-dom": "^5.3.2"
+>>>>>>> 120c3d715a9018a60541010ed947ef11ef969a34
   }
 }
