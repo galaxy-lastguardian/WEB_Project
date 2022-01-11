@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useState} from 'react';
 import Modal from "./popup_form";
 import './javascript/sliderCollegues';
@@ -6,6 +6,7 @@ import './javascript/sliderReviews';
 import './javascript/form';
 import './App.css';
 import './styleSlider.css';
+import { Route, useHistory} from "react-router-dom";
 
 // IMAGES ***************************
 import cableman_ru from "./img/cableman_ru.png";
@@ -73,6 +74,14 @@ import youtube from "./img/youtube.png";
 
 const App = () => {
     const [modalActive, setModalActive] = useState(false);
+    const history = useHistory();
+    const handleHistory = () => {
+        setModalActive(true);
+        history.push("/modal_form");
+    }
+    // useEffect(() => {
+    //     history.push("/");
+    // }, [])
     return (
         <div className='app'>
             <div className="mobile-menu">
@@ -459,7 +468,7 @@ const App = () => {
                                     <li>Предоплата от 6000 рублей в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)}>
+                                    <button className="contact-button" onClick={handleHistory}>
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -477,7 +486,7 @@ const App = () => {
                                     <li>Предоплата от 30000 рублей в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)}>
+                                    <button className="contact-button" onClick={handleHistory}>
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>
                                 </div>
@@ -495,7 +504,7 @@ const App = () => {
                                     <li>Предоплата от 270000 в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)}>
+                                    <button className="contact-button" onClick={handleHistory}>
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -921,7 +930,8 @@ const App = () => {
                 </footer>
             </div>
         </div>
-        <Modal active = {modalActive} setActive = {setModalActive}/>
+            <Route path={"/modal_form"} component={Modal}/>
+            <Modal active = {modalActive} setActive = {setModalActive}/>
         </div>
     );
 }
