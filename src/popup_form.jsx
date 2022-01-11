@@ -1,5 +1,6 @@
 import React from 'react';
 import "./popup.css"
+import Signup from "./javascript/Signup";
 
 const Modal = ({active, setActive}) => {
     return (
@@ -31,31 +32,7 @@ const Modal = ({active, setActive}) => {
                                 </div>
                             </div>
                             <div className="col-12 col-md-6">
-                                <form className="ajaxForm" action="https://formcarry.com/s/46WaOUCdYYl" method="POST" acceptCharset="UTF-8" id="form" name="form">
-                                    <div className="row">
-                                        <div className="col-12">
-                                            <input type="text" placeholder="Ваше имя" name = "name" id="form-name" className="form_input" required/>
-                                        </div>
-                                        <div className="col-12">
-                                            <input type="text" placeholder="Телефон" name = "phone" id="form-phone" className="form_input _number" required/>
-                                        </div>
-                                        <div className="col-12">
-                                            <input type="email" placeholder="E-mail" name = "email" id="form-email" className="form_input _email" required/>
-                                        </div>
-                                        <div className="col-12">
-                                            <textarea name="comment" placeholder="Ваш комментарий" id="form-comment" className="form_input" required></textarea>
-                                        </div>
-                                        <div className="col-12">
-                                            <div className="checkbox">
-                                                <input type="checkbox" name = "checkbox" id="form-checkbox" className="checkbox_input" required/>
-                                                <label htmlFor="form-checkbox" className="checkbox_label">Отправляя заявку, я даю согласие <a href="">на обработку своих персональных данных</a>.<span>*</span></label>
-                                            </div>
-                                        </div>
-                                        <div className="col-12">
-                                            <button type="submit" className="form_button">СВЯЖИТЕСЬ С НАМИ</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <Signup/>
                             </div>
                         </div>
                     </div>

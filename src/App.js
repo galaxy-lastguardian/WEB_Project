@@ -507,7 +507,7 @@ const App = () => {
                                     <li>Предоплата от 270000 в месяц</li>
                                 </ul>
                                 <div className="col-12 text-center">
-                                    <button className="contact-button" onClick={()=>setModalActive(true)}>
+                                    <button className="contact-button" onClick={()=>setModalActive(true)} >
                                         СВЯЖИТЕСЬ С НАМИ!
                                     </button>     
                                 </div>
@@ -884,7 +884,7 @@ const App = () => {
                                         <input type="text" placeholder="Ваше имя" name = "name" id="form-name" className="form_input" required/>
                                     </div>
                                     <div className="col-12">
-                                        <input type="text" placeholder="Телефон" name = "phone" id="form-phone" className="form_input _number" required/>
+                                        <input type="number" placeholder="Телефон" name = "phone" id="form-phone" className="form_input _number" required/>
                                     </div>
                                     <div className="col-12">
                                         <input type="email" placeholder="E-mail" name = "email" id="form-email" className="form_input _email" required/>
