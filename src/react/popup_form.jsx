@@ -14,6 +14,7 @@ const Modal = ({active, setActive}) => {
     const handleHistory = () => {
         setActive(false);
         history.goBack();
+        
     }
 
     return (
