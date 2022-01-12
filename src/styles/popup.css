@@ -155,6 +155,10 @@
     background-color: transparent;
 }
 
+.Mfeedback .MajaxForm button:disabled{
+    background-color: rgb(30, 30, 30);
+}
+
 .Mcheckbox_form{
     position: relative;
     margin-bottom: 0px;
@@ -218,7 +222,7 @@
 
 .Mfeedback .popupFormValidation{
     display: block;
-    color: black;
+    color: rgb(255, 17, 0);
     position: absolute;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -242,7 +246,14 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .Mfeedback .elem {
         margin-top: 0px !important;
     }
+}
+
+@media screen and (min-width: 1024px){
+    .Mfeedback .popupFormValidation{
+        margin-left: 260px;
+    }    
 }

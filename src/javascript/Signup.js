@@ -46,10 +46,10 @@ export default function Signup() {
             Mtext: ""
         },
         validationSchema: Yup.object({
-            Mname: Yup.string().max(17, "Must be less than 17").required("Required"),
-            Memail: Yup.string().email("Invalid email").required("Required"),
-            Mnumber: Yup.string().min(8, "Must be at least 8").required("Required"),
-            Mtext: Yup.string().min(5, "Need comments").required("Required")
+            Mname: Yup.string().max(17, "Must be less than 17").required("Required field!"),
+            Memail: Yup.string().email("Invalid email").required("Required field!"),
+            Mnumber: Yup.string().min(8, "Must be at least 8").required("Required field!"),
+            Mtext: Yup.string().min(5, "Need comments").required("Required field!")
         }),
         onSubmit: (values) => {
 
