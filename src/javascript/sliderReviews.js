@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import '../slick/slick';
 import '../slick/slick.css';
-import '../styleSlider.css';
+import '../styles/styleSlider.css';
 
 $(document).ready(function(){
     $('.reviews-slider').slick({

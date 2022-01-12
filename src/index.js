@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { BrowserRouter as Router, useHistory} from "react-router-dom";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './react/App';
+import reportWebVitals from './react/reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
