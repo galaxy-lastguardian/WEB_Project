@@ -85,7 +85,7 @@ export default function Signup() {
     console.log(formik.errors);
     // console.log(formik.values);
     return (
-        <form onSubmit={formik.handleSubmit}>
+        <form className = "MajaxForm" onSubmit={formik.handleSubmit}>
             <div className="Mform_input">
                 <input
                     id="Mname"
@@ -96,7 +96,7 @@ export default function Signup() {
                     value={formik.values.Mname}
                     onBlur={formik.handleBlur}
                 />
-                {formik.touched.Mname && formik.errors.Mname ? <p>{formik.errors.Mname}</p> : null}
+                {formik.touched.Mname && formik.errors.Mname ? <div className="popupFormValidation">{formik.errors.Mname}</div> : null}
             </div>
             <div className="Mform_input">
                 <input
@@ -108,7 +108,7 @@ export default function Signup() {
                     value={formik.values.Mnumber}
                     onBlur={formik.handleBlur}
                 />
-                {formik.touched.Mnumber && formik.errors.Mnumber ? <p>{formik.errors.Mnumber}</p> : null}
+                {formik.touched.Mnumber && formik.errors.Mnumber ? <div className="popupFormValidation">{formik.errors.Mnumber}</div> : null}
             </div>
             <div className="Mform_input">
                 <input
@@ -120,7 +120,7 @@ export default function Signup() {
                     value={formik.values.Memail}
                     onBlur={formik.handleBlur}
                 />
-                {formik.touched.Memail && formik.errors.Memail ? <p>{formik.errors.Memail}</p> : null}
+                {formik.touched.Memail && formik.errors.Memail ? <div className="popupFormValidation">{formik.errors.Memail}</div> : null}
             </div>
             <div className="Mform_textarea">
                 <textarea
@@ -132,7 +132,7 @@ export default function Signup() {
                     value={formik.values.Mtext}
                     onBlur={formik.handleBlur}
                 ></textarea>
-                {formik.touched.Mtext && formik.errors.Mtext ? <p>{formik.errors.Mtext}</p> : null}
+                {formik.touched.Mtext && formik.errors.Mtext ? <div className="popupFormValidation">{formik.errors.Mtext}</div> : null}
             </div>
             <div className="Mcheckbox_form">
                 <input
@@ -141,6 +141,7 @@ export default function Signup() {
                     type="checkbox"
                     required
                 />
+                <label htmlFor="Mcheckbox" className="Mcheckbox_label">Отправляя заявку, я даю согласие <a href="https://drupal-coder.ru">на обработку своих персональных данных</a>.<span>*</span></label>
             </div>
             <button type="submit" className="Mform_button" disabled={disable} onClick={sendingForm}>СВЯЖИТЕСЬ С НАМИ</button>
         </form>

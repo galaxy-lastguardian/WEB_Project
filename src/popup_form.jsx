@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+import Signup from './javascript/Signup';
 import "./popup.css"
-import Signup from "./javascript/Signup";
-import { BrowserRouter as Router, useHistory} from "react-router-dom";
 // IMAGES ***************************
 import feedbackIcon1 from "./img/feedback-icon1.png";
 import feedbackIcon2 from "./img/feedback-icon2.png";
@@ -10,22 +9,16 @@ import footerPic2 from "./img/footer-pic2.png";
 // IMAGES ***************************
 
 const Modal = ({active, setActive}) => {
-    const history = useHistory();
-    const handleHistory = () => {
-        setActive(false);
-        history.goBack();
-    }
-
     return (
-        <div className={active ? "popup_form_overlay active" : "popup_form_overlay"} onClick= {handleHistory}>
+        <div className={active ? "popup_form_overlay active" : "popup_form_overlay"} onClick= {() => setActive(false)}>
             <div className={active ? "popup_form_wrapper active" : "popup_form_wrapper"} onClick = {e => e.stopPropagation()}>
                 <img src={footerPic1} alt="drupal-coder" className="pic1"/>
                 <img src={footerPic2} alt="drupal-coder" className="pic2"/>
                 <div className="container">
-                    <span onClick= {handleHistory}>&#10006;</span>
+                    <span className="closeBtn" onClick= {() => setActive(false)}>&#10006;</span>
                     <div className="feedback" id="feedback-form">
                         <div className="row">
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-lg-6">
                                 <div className="row">
                                     <div className="col-12 text-center text-md-start">
                                         <h2>Оставить заявку на поддержку сайта</h2>
@@ -44,7 +37,7 @@ const Modal = ({active, setActive}) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-lg-6">
                                 <Signup/>
                             </div>
                         </div>
